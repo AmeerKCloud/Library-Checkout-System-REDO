@@ -22,12 +22,21 @@
 # - main.py — main loop
 
 
-#-------JSON-Related------
+#-------------------------------------------⬇️JSON-Related (+ explanations)------------------------------------------------
 from pathlib import Path
 import json
-#-------------------------
+
+
+# '__file__' will give you the path of test_main.py.
+# From there, we can step “up” one level to reach the project root (library checkout system/), then into data/.
+
+# Add this in test_main.py (under the imports):
 
 PROJECT_ROOT = Path(__file__).resolve().parents[1] 
+
+
+#-------------------------------------------JSON-Related (+ explanations)⬆️------------------------------------------------
+
 
 
 #TODO: 
