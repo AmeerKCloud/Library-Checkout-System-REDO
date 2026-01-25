@@ -60,6 +60,12 @@ BOOKS_JSON_PATH = PROJECT_ROOT / "data" / "library_books.json"
 
 # This is OS-independent and doesn’t rely on where you run the script from, which is why this style is used a lot in real projects.
 
+
+#.......STEP 3: Load the JSON list into Python
+
+def load_library_books():
+    
+
 #---------------------------------------------JSON-Related (+ explanations)⬆️------------------------------------------------
 
 
