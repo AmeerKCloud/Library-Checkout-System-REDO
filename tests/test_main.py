@@ -54,7 +54,11 @@ PROJECT_ROOT = Path(__file__).resolve().parents[1]
 #⬇️ Build the full path to data/library_books.json
 BOOKS_JSON_PATH = PROJECT_ROOT / "data" / "library_books.json"
 
+# At this point:
+# - PROJECT_ROOT → /full/path/to/library checkout system
+# - BOOKS_JSON_PATH → /full/path/to/library checkout system/data/library_books.json
 
+# This is OS-independent and doesn’t rely on where you run the script from, which is why this style is used a lot in real projects.
 
 #---------------------------------------------JSON-Related (+ explanations)⬆️------------------------------------------------
 
