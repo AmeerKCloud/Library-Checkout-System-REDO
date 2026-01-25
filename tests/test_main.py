@@ -90,6 +90,31 @@ def test_library_books_loaded():
     assert "title" in first_book
     assert "author" in first_book
 
+    print(books)
+
+test_library_books_loaded()
+
+# This keeps things:
+# - simple
+# - test-friendly
+# - aligned with real-world practices
+
+
+#.......STEP 5: Quick “why this is industry-standard”
+
+# 1 - pathlib.Path is preferred over manually building strings like "../data/library_books.json" because:
+# - it’s cross-platform (Windows, macOS, Linux)
+# - it’s more readable (PROJECT_ROOT / "data" / "file.json")
+
+# 2 - Using Path(__file__).resolve().parents[1]:
+# - ties your path to the location of the file, not the current working directory
+# - makes tests more robust when run via pytest, an IDE, or a CI pipeline
+
+# 3 - Keeping the loading logic in a small helper function (load_library_books) makes it:
+# - reusable
+# - easy to test
+# - easy to change later (e.g., if you move the file)
+
 #---------------------------------------------JSON-Related (+ explanations)⬆️------------------------------------------------
 
 
