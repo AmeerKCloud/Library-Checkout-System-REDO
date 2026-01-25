@@ -22,7 +22,21 @@
 # - main.py — main loop
 
 
-#-------------------------------------------⬇️JSON-Related (+ explanations)------------------------------------------------
+#---------------------------------------------⬇️JSON-Related (+ explanations)------------------------------------------------
+
+# # ______PROJECT STRUCTURE______:
+# Let’s assume your folder layout looks like this:
+
+# library checkout system/
+# ├── data/
+# │ └── library_books.json
+# ├── tests/
+# │ └── test_main.py
+# └── (other project files, e.g. src/, README, etc.)
+
+# Our goal:
+# In tests/test_main.py, load the list from data/library_books.json in a robust way.
+
 from pathlib import Path
 import json
 
@@ -35,7 +49,8 @@ import json
 PROJECT_ROOT = Path(__file__).resolve().parents[1] 
 
 
-#-------------------------------------------JSON-Related (+ explanations)⬆️------------------------------------------------
+
+#---------------------------------------------JSON-Related (+ explanations)⬆️------------------------------------------------
 
 
 
