@@ -37,12 +37,12 @@
 # Our goal:
 # In tests/test_main.py, load the list from data/library_books.json in a robust way.
 
-# STEP 1: Use pathlib + json in test_main.py
+#.......STEP 1: Use pathlib + json in test_main.py
 
 from pathlib import Path
 import json
 
-# STEP 2: Locate the project root from test_main.py
+#.......STEP 2: Locate the project root from test_main.py
 
 # '__file__' will give you the path of test_main.py.
 # - From there, we can step “up” one level to reach the project root (library checkout system/), then into data/.
