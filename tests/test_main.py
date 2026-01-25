@@ -75,6 +75,21 @@ def load_library_books():
 # Assuming your JSON looks like a top-level list of book 
 # dictionaries, books will be a Python list of dict objects.
 
+
+#.......STEP 4: Use the loaded data in your tests
+
+def test_library_books_loaded():
+    books = load_library_books()
+
+    # Basic sanity checks:
+    assert isinstance(books, list)
+    assert len(books) > 0
+
+    first_book = books[0]
+    assert "book_id" in first_book
+    assert "title" in first_book
+    assert "author" in first_book
+
 #---------------------------------------------JSON-Related (+ explanations)⬆️------------------------------------------------
 
 
