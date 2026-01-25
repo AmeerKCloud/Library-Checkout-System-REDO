@@ -64,7 +64,9 @@ BOOKS_JSON_PATH = PROJECT_ROOT / "data" / "library_books.json"
 #.......STEP 3: Load the JSON list into Python
 
 def load_library_books():
-    
+    with BOOKS_JSON_PATH.open("r", encoding="utf-8") as f:
+        books = json.load(f)
+    return books
 
 #---------------------------------------------JSON-Related (+ explanations)⬆️------------------------------------------------
 
