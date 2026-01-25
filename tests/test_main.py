@@ -60,7 +60,8 @@ BOOKS_JSON_PATH = PROJECT_ROOT / "data" / "library_books.json"
 # - PROJECT_ROOT → /full/path/to/library checkout system
 # - BOOKS_JSON_PATH → /full/path/to/library checkout system/data/library_books.json
 
-# This is OS-independent and doesn’t rely on where you run the script from, which is why this style is used a lot in real projects.
+# This is OS-independent and doesn’t rely on where you run the script from, which is 
+# why this style is used a lot in real projects.
 
 
 #.......STEP 3: Load the JSON list into Python
@@ -70,6 +71,9 @@ def load_library_books():
     with BOOKS_JSON_PATH.open("r", encoding="utf-8") as f:
         books = json.load(f)
     return books
+
+# Assuming your JSON looks like a top-level list of book 
+# dictionaries, books will be a Python list of dict objects.
 
 #---------------------------------------------JSON-Related (+ explanations)⬆️------------------------------------------------
 
