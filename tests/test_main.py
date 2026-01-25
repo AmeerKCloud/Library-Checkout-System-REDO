@@ -37,10 +37,12 @@
 # Our goal:
 # In tests/test_main.py, load the list from data/library_books.json in a robust way.
 
+
 #.......STEP 1: Use pathlib + json in test_main.py
 
 from pathlib import Path
 import json
+
 
 #.......STEP 2: Locate the project root from test_main.py
 
@@ -63,6 +65,7 @@ BOOKS_JSON_PATH = PROJECT_ROOT / "data" / "library_books.json"
 
 #.......STEP 3: Load the JSON list into Python
 
+#⬇️ Now we read the file and parse it with json.load():
 def load_library_books():
     with BOOKS_JSON_PATH.open("r", encoding="utf-8") as f:
         books = json.load(f)
