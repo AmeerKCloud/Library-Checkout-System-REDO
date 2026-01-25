@@ -1,0 +1,51 @@
+[
+{
+"book_id": "B001",
+"title": "1984",
+"author": "GEORGE ORWELL",
+"genre": "DYSTOPIAN",
+"available": true
+},
+{
+"book_id": "B002",
+"title": "TO KILL A MOCKINGBIRD",
+"author": "HARPER LEE",
+"genre": "CLASSIC",
+"available": true
+},
+{
+"book_id": "B003",
+"title": "THE GREAT GATSBY",
+"author": "F. SCOTT FITZGERALD",
+"genre": "CLASSIC",
+"available": true
+},
+{
+"book_id": "B004",
+"title": "THE HOBBIT",
+"author": "J.R.R. TOLKIEN",
+"genre": "FANTASY",
+"available": true
+},
+{
+"book_id": "B005",
+"title": "A BRIEF HISTORY OF TIME",
+"author": "STEPHEN HAWKING",
+"genre": "SCIENCE",
+"available": true
+},
+{
+"book_id": "B006",
+"title": "CLEAN CODE",
+"author": "ROBERT C. MARTIN",
+"genre": "PROGRAMMING",
+"available": true
+},
+{
+"book_id": "B007",
+"title": "PYTHON CRASH COURSE",
+"author": "ERIC MATTHES",
+"genre": "PROGRAMMING",
+"available": true
+}
+]
