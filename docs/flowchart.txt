@@ -1,1 +1,28 @@
-flowchart.txt
+project_name/
+│
+├── README.md
+├── requirements.txt
+├── .gitignore
+│
+├── src/
+│   ├── main.py
+│   │
+│   ├── modules/
+│   │   ├── __init__.py
+│   │   ├── core.py
+│   │   ├── models.py
+│   │   ├── services.py
+│   │   └── utils.py
+│
+├── tests/
+│   ├── test_core.py
+│   ├── test_models.py
+│   └── test_services.py
+│
+├── data/
+│   ├── sample_input.json
+│   └── sample_output.json
+│
+└── docs/
+    ├── uml_diagram.txt
+    └── flowchart.txt
