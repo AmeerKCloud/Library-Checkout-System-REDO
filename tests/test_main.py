@@ -24,7 +24,7 @@
 
 #---------------------------------------------⬇️JSON-Related (+ explanations)------------------------------------------------
 
-# # ______PROJECT STRUCTURE______:
+# ______PROJECT STRUCTURE______:
 # Let’s assume your folder layout looks like this:
 
 # library checkout system/

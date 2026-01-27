@@ -1,3 +1,5 @@
+# ______PROJECT STRUCTURE______:
+
 project_name/
 │
 ├── README.md
@@ -20,8 +22,8 @@ project_name/
 │   └── test_services.py
 │
 ├── data/
-│   ├── sample_input.json
-│   └── sample_output.json
+│   ├
+│   └── library_books.json
 │
 └── docs/
     ├── uml_diagram.txt
