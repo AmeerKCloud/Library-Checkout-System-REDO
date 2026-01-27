@@ -9,9 +9,10 @@
 # library checkout system/
 # ├── data/
 # │ └── library_books.json
-# ├── tests/
-# │ └── test_main.py
-# └── (other project files, e.g. src/, README, etc.)
+# ├── src/
+# │ └── modules/
+# |   └── utils.py
+# └── (other project files, e.g. tests/, README, etc.)
 
 # Our goal:
 # In tests/test_main.py, load the list from data/library_books.json in a robust way.
@@ -30,7 +31,7 @@ import json
 # - Add this in test_main.py (under the imports):
 
 #⬇️ Get the absolute path to the project root (one level up from tests/)
-PROJECT_ROOT = Path(__file__).resolve().parents[1] 
+PROJECT_ROOT = Path(__file__).resolve().parents[2] 
 
 #⬇️ Build the full path to data/library_books.json
 BOOKS_JSON_PATH = PROJECT_ROOT / "data" / "library_books.json"
