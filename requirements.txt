@@ -26,8 +26,11 @@ pytest #⬅️ Essential for testing all python 'test' code within 'test' files 
 # What is 'pytest'?
 # - pytest is used to test any test code within a test file in the test folder, from the project root directory.
 # > You run pytest via windows powershell 
-# > But first, u must install 'pytest', using the following steps:
-# . > 
+# > But first, u must install 'pytest', using the following steps (for windows powershell only):
+# . > ✅ Step 1 — Verify You Have Python & pip ; Open a terminal (or powershell) and run: 'python --version', & 'pip --version'
+# . . > If both give versions, you’re good.
+# . > 📦 Step 2 — Install pytest; Most common way: 'pip install pytest'
+# . . > If your project uses virtual environments (recommended), activate it first: 'venv\Scripts\activate'
 # . > Do this by navigating to the project root directory (see all powershell navigation commands in ChtGPT)
 # . . > The most common and efficient way is to use the 'cd' alias followed by the path to the desired directory
 
