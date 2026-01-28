@@ -21,8 +21,11 @@
 # - library_data.py — starting book list
 # - main.py — main loop
 
-pytest
+pytest #⬅️ Essential for testing all python 'test' code within 'test' files in the 'test' directory.
 
+# What is 'pytest'?
+# - pytest is used to test any test file within a test folder, from the root directory.
+# > You run it via windows powershell 
 
 
 
