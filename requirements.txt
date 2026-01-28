@@ -32,7 +32,7 @@ pytest #⬅️ Essential & professional for testing all python 'test' code withi
 # . > 📦 Step 2 — Install pytest; Most common way: 'pip install pytest'
 # . . > If your project uses virtual environments (recommended), activate it first: 'venv\Scripts\activate'
 # . . > Then install: 'pip install pytest'
-# . > 🗂 Step 3 — Add pytest to requirements (Optional but Recommended); Inside requirements.txt in ur project root directory add: 'pytest'
+# . > 🗂 Step 3 — Add pytest inside requirements.txt (this file; Optional but Recommended) in ur project root directory add: 'pytest'
 # . . > This allows others (and future you) to reproduce the environment.
 # . > Do this by navigating to the project root directory (see all powershell navigation commands in ChtGPT)
 # . . > The most common and efficient way is to use the 'cd' alias followed by the path to the desired directory
