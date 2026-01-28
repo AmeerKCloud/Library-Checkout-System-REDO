@@ -24,8 +24,12 @@
 pytest #⬅️ Essential for testing all python 'test' code within 'test' files in the 'test' directory.
 
 # What is 'pytest'?
-# - pytest is used to test any test file within a test folder, from the root directory.
-# > You run it via windows powershell 
+# - pytest is used to test any test code within a test file in the test folder, from the project root directory.
+# > You run pytest via windows powershell 
+# > But first, u must install 'pytest', using the following steps:
+# . > 
+# . > Do this by navigating to the project root directory (see all powershell navigation commands in ChtGPT)
+# . . > The most common and efficient way is to use the 'cd' alias followed by the path to the desired directory
 
 
 
