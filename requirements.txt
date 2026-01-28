@@ -38,7 +38,18 @@ pytest #⬅️ Essential & professional for testing all python 'test' code withi
 # . . > Put this function inside: def test_addition():
 #                                     assert 1 + 1 == 2
 
-# . > ▶️ Step 5 — Run the Tests: From your project root, run:
+# . > ▶️ Step 5 — Run the Tests: From your project root, run: 'pytest'
+# . . > You should see something like:
+
+# ===== test session starts =====
+# collected 1 item
+
+# tests/test_sample.py .                             [100%]
+
+# ===== 1 passed in 0.02s =====
+
+# . . > The '.' means the test passed.
+
 
 
 # > How to run pytest via windows powershell?
