@@ -64,8 +64,16 @@ pytest #⬅️ Essential & professional for testing all python 'test' code withi
 
 
 # > How to run pytest via windows powershell?
-# . > Do this by navigating to the project root directory in powershell (see all powershell navigation commands in ChtGPT)
-# . . > The most common and efficient way is to use the 'cd' alias followed by the path to the desired directory
+
+# 1) Do this by navigating to the project root directory in powershell (see all powershell navigation commands in ChtGPT)
+# . > The most common and efficient way is to use the 'cd' (change directory) alias followed by the path to the desired directory
+# . . > eg: cd C:\Users\YourName\Documents
+
+# 2) Common Navigation Scenarios:
+# . > Move up one level: To go to the parent folder of your current location: 'cd ..'
+# . > Move up two levels: 'cd ..\..'
+# . > Move to the root of the current drive (e.g., C:\): 'cd \'
+
 
 
 
