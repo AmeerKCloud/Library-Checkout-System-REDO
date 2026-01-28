@@ -51,9 +51,20 @@ pytest #⬅️ Essential & professional for testing all python 'test' code withi
 # . . > The '.' means the test passed.
 
 
+# 📍 Important: Why Run From Project Root?
+
+# Because pytest auto-discovers files named:
+
+# test_*.py
+
+# *_test.py
+
+# across the entire project — including imports.
+
+
 
 # > How to run pytest via windows powershell?
-# . > Do this by navigating to the project root directory (see all powershell navigation commands in ChtGPT)
+# . > Do this by navigating to the project root directory in powershell (see all powershell navigation commands in ChtGPT)
 # . . > The most common and efficient way is to use the 'cd' alias followed by the path to the desired directory
 
 
