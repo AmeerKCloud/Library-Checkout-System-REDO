@@ -34,6 +34,8 @@ pytest #⬅️ Essential & professional for testing all python 'test' code withi
 # . . > Then install: 'pip install pytest'
 # . > 🗂 Step 3 — Add pytest inside requirements.txt (this file; Optional but Recommended) in ur project root directory add: 'pytest'
 # . . > This allows others (and future you) to reproduce the environment.
+
+# > How to run pytest via windows powershell?
 # . > Do this by navigating to the project root directory (see all powershell navigation commands in ChtGPT)
 # . . > The most common and efficient way is to use the 'cd' alias followed by the path to the desired directory
 
