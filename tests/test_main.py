@@ -24,17 +24,17 @@
 
 #---------------------------------------------⬇️JSON-Related (+ explanations)------------------------------------------------
 
-# from src.modules.config import DATA_DIR #⬅️ giving error message
+from src.modules.config import DATA_DIR #⬅️ giving error message
 
 #---------------------------------------------JSON-Related (+ explanations)⬆️------------------------------------------------
 
 
 # ----------------------⬇️ Main Program -------------------------
 
-import sys
-print(sys.path)
+# import sys
+# print(sys.path)
 
-# print(DATA_DIR)
+print(DATA_DIR)
 
 
 #TODO: 
