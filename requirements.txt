@@ -34,6 +34,10 @@ pytest #⬅️ Essential & professional for testing all python 'test' code withi
 # . . > Then install: 'pip install pytest'
 # . > 🗂 Step 3 — Add pytest inside requirements.txt (this file; Optional but Recommended) in ur project root directory add: 'pytest'
 # . . > This allows others (and future you) to reproduce the environment.
+# . > 🧪 Step 4 — Create Your First Test File: Inside your tests/ folder create: test_sample.py
+# . . > Put this function inside: def test_addition():
+#                                     assert 1 + 1 == 2
+
 
 # > How to run pytest via windows powershell?
 # . > Do this by navigating to the project root directory (see all powershell navigation commands in ChtGPT)
