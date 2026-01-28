@@ -68,12 +68,22 @@ pytest #⬅️ Essential & professional for testing all python 'test' code withi
 # 1) Do this by navigating to the project root directory in powershell (see all powershell navigation commands in ChtGPT)
 # . > The most common and efficient way is to use the 'cd' (change directory) alias followed by the path to the desired directory
 # . . > eg: cd C:\Users\YourName\Documents
+# . > Once at the project root folder, enter: 'pytest'
 
-# 2) Common Navigation Scenarios:
+# 2) Common Navigation Scenarios in Powershell:
 # . > Move up one level: To go to the parent folder of your current location: 'cd ..'
 # . > Move up two levels: 'cd ..\..'
 # . > Move to the root of the current drive (e.g., C:\): 'cd \'
 # . > Move into a subfolder of your current directory: If you are in C:\Users\YourName and want to go to the Documents folder within it: 'cd Documents'
+# . . > (You can use the Tab key for auto-completion after typing a few letters, e.g., cd Doc + Tab).
+# . > Change to a different drive: You must specify the drive letter followed by a colon: 'cd D:'
+
+# 3) Using 'Set-Location'
+# . > The full, official PowerShell command is Set-Location. It performs the exact same function as cd: 'Set-Location -Path C:\Program Files'
+
+# 4) Navigating Paths with Spaces:
+# . > If a folder name contains spaces, you must enclose the entire path in quotation marks: 'cd "C:\Program Files\Microsoft Office"'
+# . >
 
 
 
