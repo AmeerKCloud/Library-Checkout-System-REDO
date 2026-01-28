@@ -73,7 +73,7 @@ pytest #⬅️ Essential & professional for testing all python 'test' code withi
 # . > Move up one level: To go to the parent folder of your current location: 'cd ..'
 # . > Move up two levels: 'cd ..\..'
 # . > Move to the root of the current drive (e.g., C:\): 'cd \'
-
+# . > Move into a subfolder of your current directory: If you are in C:\Users\YourName and want to go to the Documents folder within it: 'cd Documents'
 
 
 
