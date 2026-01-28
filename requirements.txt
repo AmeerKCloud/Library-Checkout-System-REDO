@@ -38,6 +38,8 @@ pytest #⬅️ Essential & professional for testing all python 'test' code withi
 # . . > Put this function inside: def test_addition():
 #                                     assert 1 + 1 == 2
 
+# . > ▶️ Step 5 — Run the Tests: From your project root, run:
+
 
 # > How to run pytest via windows powershell?
 # . > Do this by navigating to the project root directory (see all powershell navigation commands in ChtGPT)
