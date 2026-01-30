@@ -31,13 +31,13 @@ import json
 # - Add this in test_main.py (under the imports):
 
 #⬇️ Get the absolute path to the project root (one level up from tests/)
-PROJECT_ROOT = Path(__file__).resolve().parents[2] 
+PRJECT_ROOT = Path(__file__).resolve().parents[2] 
 
 #⬇️ Build the full path to data/library_books.json
-BOOKS_JSON_PATH = PROJECT_ROOT / "data" / "library_books.json"
+BOOKS_JSON_PATH = PRJECT_ROOT / "data" / "library_books.json"
 
 # At this point:
-# - PROJECT_ROOT → /full/path/to/library checkout system
+# - PRJECT_ROOT → /full/path/to/library checkout system
 # - BOOKS_JSON_PATH → /full/path/to/library checkout system/data/library_books.json
 
 # This is OS-independent and doesn’t rely on where you run the script from, which is 
