@@ -40,6 +40,8 @@ project_name/
 ├── README.md
 ├── requirements.txt
 ├── .gitignore
+├── .env
+├── pytest.ini
 │
 ├── src/
 │   ├── main.py
@@ -47,13 +49,12 @@ project_name/
 │   │
 │   ├── modules/
 │   │   ├── __init__.py
-│   │   ├── core.py
+|   |   ├── config.py
 │   │   ├── models.py
-│   │   ├── services.py
 │   │   └── utils.py
 │
 ├── tests/
-│   ├── test_core.py
+│   ├── test_main.py
 │   ├── test_models.py
 │   └── test_services.py
 │
