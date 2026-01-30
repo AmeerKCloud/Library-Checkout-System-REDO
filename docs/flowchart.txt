@@ -56,7 +56,7 @@ project_name/
 ├── tests/
 │   ├── test_main.py
 │   ├── test_models.py
-│   └── test_services.py
+│   └── test_sample.py
 │
 ├── data/
 │   └── library_books.json
