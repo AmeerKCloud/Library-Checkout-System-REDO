@@ -33,7 +33,7 @@ import json
 #⬇️ Get the absolute path to the project root (two levels up from modules/src/)
 PRJECT_ROOT = Path(__file__).resolve().parents[2] 
 
-#⬇️ Build the full path to data/library_books.json
+#⬇️ Build the full path to data/library_books.json (where the library list of book dict objects exists)
 BOOKS_JSON_PATH = PRJECT_ROOT / "data" / "library_books.json"
 
 # At this point:
