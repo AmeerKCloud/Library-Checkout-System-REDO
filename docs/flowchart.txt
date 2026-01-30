@@ -32,9 +32,6 @@ project_name/
 
 _________________ Current Project Layout (Library-Checkout-System-REDO) ____________________
 
-
-# ______PRJECT STRUCTURE TEMPLATE______:
-
 project_name/
 │
 ├── README.md
@@ -43,6 +40,13 @@ project_name/
 ├── .env
 ├── pytest.ini
 │
+|
+├── .pytest_cache/
+|   ├── V
+|   ├──.gitignore
+|   ├── CACHEDIR.TAG
+|   ├── README.md
+|
 ├── src/
 │   ├── main.py
 |   ├── __init__.py
