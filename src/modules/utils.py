@@ -30,7 +30,7 @@ import json
 # - From there, we can step “up” one level to reach the project root (library checkout system/), then into data/.
 # - Add this in test_main.py (under the imports):
 
-#⬇️ Get the absolute path to the project root (one level up from tests/)
+#⬇️ Get the absolute path to the project root (two levels up from modules/src/)
 PRJECT_ROOT = Path(__file__).resolve().parents[2] 
 
 #⬇️ Build the full path to data/library_books.json
