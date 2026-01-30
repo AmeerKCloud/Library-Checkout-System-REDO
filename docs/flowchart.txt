@@ -33,3 +33,34 @@ project_name/
 _________________ Current Project Layout (Library-Checkout-System-REDO) ____________________
 
 
+# ______PRJECT STRUCTURE TEMPLATE______:
+
+project_name/
+│
+├── README.md
+├── requirements.txt
+├── .gitignore
+│
+├── src/
+│   ├── main.py
+|   ├── __init__.py
+│   │
+│   ├── modules/
+│   │   ├── __init__.py
+│   │   ├── core.py
+│   │   ├── models.py
+│   │   ├── services.py
+│   │   └── utils.py
+│
+├── tests/
+│   ├── test_core.py
+│   ├── test_models.py
+│   └── test_services.py
+│
+├── data/
+│   ├
+│   └── library_books.json
+│
+└── docs/
+    ├── uml_diagram.txt
+    └── flowchart.txt
