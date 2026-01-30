@@ -86,7 +86,7 @@ test_library_books_loaded()
 # - it’s cross-platform (Windows, macOS, Linux)
 # - it’s more readable (PRJECT_ROOT / "data" / "file.json")
 
-# 2 - Using Path(__file__).resolve().parents[1]:
+# 2 - Using Path(__file__).resolve().parents[2]:
 # - ties your path to the location of the file, not the current working directory
 # - makes tests more robust when run via pytest, an IDE, or a CI pipeline
 
