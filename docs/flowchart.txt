@@ -59,7 +59,6 @@ project_name/
 │   └── test_services.py
 │
 ├── data/
-│   ├
 │   └── library_books.json
 │
 └── docs/
