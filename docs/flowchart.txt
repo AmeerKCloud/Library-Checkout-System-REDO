@@ -1,4 +1,4 @@
-# ______PROJECT STRUCTURE______:
+# ______PRJECT STRUCTURE TEMPLATE______:
 
 project_name/
 │
@@ -28,3 +28,6 @@ project_name/
 └── docs/
     ├── uml_diagram.txt
     └── flowchart.txt
+
+
+_________________ Current Project Layout (Library-Checkout-System-REDO) ____________________
