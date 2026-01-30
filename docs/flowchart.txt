@@ -39,7 +39,6 @@ project_name/
 ├── .gitignore
 ├── .env
 ├── pytest.ini
-│
 |
 ├── .pytest_cache/
 |   ├── V
