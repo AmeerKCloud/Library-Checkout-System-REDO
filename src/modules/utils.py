@@ -84,7 +84,7 @@ test_library_books_loaded()
 
 # 1 - pathlib.Path is preferred over manually building strings like "../data/library_books.json" because:
 # - it’s cross-platform (Windows, macOS, Linux)
-# - it’s more readable (PROJECT_ROOT / "data" / "file.json")
+# - it’s more readable (PRJECT_ROOT / "data" / "file.json")
 
 # 2 - Using Path(__file__).resolve().parents[1]:
 # - ties your path to the location of the file, not the current working directory
