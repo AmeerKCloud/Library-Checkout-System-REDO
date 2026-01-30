@@ -32,7 +32,7 @@ project_name/
 
 _________________ Current Project Layout (Library-Checkout-System-REDO) ____________________
 
-project_name/
+library-checkout-system-REDO/
 │
 ├── README.md
 ├── requirements.txt
