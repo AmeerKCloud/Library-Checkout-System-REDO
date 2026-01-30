@@ -57,6 +57,7 @@ project_name/
 │   │   └── utils.py
 │
 ├── tests/
+|   ├── __pycache__/
 │   ├── test_main.py
 │   ├── test_models.py
 │   └── test_sample.py
