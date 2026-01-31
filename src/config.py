@@ -5,6 +5,10 @@
 # new to me and I have not been able to grasp it adequately, thus i failed to 
 # truly understand its functionality within the larger program.
 
+# I was trying to import it within 'test_main.py' within the 'test/' directory
+# using 'from src.modules.config import DATA_DIR' (when config.py was in 'modules/')
+# and 'from src.config import DATA_DIR' (when i moved it to 'src/').
+
 # - I will, however, still leave this code and it's related notes here for 
 # future sake when i may finally understand it and come back to correctly 
 # implement it within this program.
