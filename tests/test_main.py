@@ -24,7 +24,7 @@
 
 #---------------------------------------------⬇️JSON-Related (+ explanations)------------------------------------------------
 
-from src.modules.config import DATA_DIR #⬅️ giving error message
+
 
 #---------------------------------------------JSON-Related (+ explanations)⬆️------------------------------------------------
 
@@ -36,6 +36,9 @@ from src.modules.config import DATA_DIR #⬅️ giving error message
 
 print(DATA_DIR)
 
+
+# def test_addition():
+#     assert 1 + 1 == 2
 
 #TODO: 
 # Establish this files location relative to the root folder [✅Resolved\Completed]
