@@ -14,7 +14,7 @@ DATA_DIR = PRJECT_ROOT / "data"
 print(DATA_DIR)
 
 
-# ____ Original notes/reccommendation from ChatGPT ____:
+# ____ Original notes/reccommendation from ChatGPT for this method ____:
 
 # 🏗 7. If You Want to Go Further (Best Practice Option)
 
