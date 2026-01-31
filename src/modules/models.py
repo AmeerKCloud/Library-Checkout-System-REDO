@@ -28,15 +28,18 @@ class Book:
 class Library:
     """
     Prints the entire list of books.
-    
+    Allows user to borrow a book
+    or return a book.
     """
-    def __init__(self):
+    def __init__(self, library_data):
+        self.library_data = library_data
         pass
 
     def show_books(self):
         """
         Displays entire list of books.
         """
+
 
 class User:
     """
