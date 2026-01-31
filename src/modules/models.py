@@ -5,14 +5,19 @@ from utils import load_library_books
 class Book:
     """
     Displays all available book titles.
-    Checks if a book is available or not.
+    Checks if a specific book is available or not.
     Returns True if it is, False if its not.
+    Does not store anything.
     """
     def __init__(self, book_title, book_author, library_data):
         self.book_title = book_title
         self.book_author = book_author
         self.library_data = library_data
-        pass
+
+    def is_available(self):
+        for list_item in self.library_data:
+            print(list_item)
+
 
 
 class Library:

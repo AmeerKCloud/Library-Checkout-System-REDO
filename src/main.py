@@ -24,7 +24,13 @@
 
 
 from modules.utils import load_library_books
+from modules.models import Book
 
 print(load_library_books())
+
+title = input("Enter book title:\n").upper()
+author = input("Enter authors name:\n").upper()
+
+Book(title, author, load_library_books())
 
 
