@@ -55,7 +55,12 @@ class Library:
 
 class User:
     """
-    Docstring for User
+    Creates and keeps a record of of all
+    a users borrowed and returned books.
     """
-    def __init__(self):
+    def __init__(self, user_name):
+        self.user_name = user_name
         pass
+
+    def borrowed_book(self):
+        """Makes a list of all of a users borrowed books."""
