@@ -18,7 +18,7 @@ class Book:
         for list_item in self.library_data:
             if list_item["title"] == self.book_title and list_item["author"] == self.book_author:
                 if list_item["available"] == True:
-                    print(f"\n{self.book_title}, by {self.book_author} is currently available ✅")
+                    print(f"\n{self.book_title}, by {self.book_author}, is currently available ✅")
                 else:
                     print(f"\n{self.book_title}, by {self.book_author}, is currently unavailable ❌")
                 
