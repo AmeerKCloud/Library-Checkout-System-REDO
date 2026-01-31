@@ -1,4 +1,4 @@
-from utils import load_library_books
+# from utils import load_library_books
 
 # print(load_library_books())
 
@@ -16,7 +16,8 @@ class Book:
 
     def is_available(self):
         for list_item in self.library_data:
-            print(list_item)
+            if list_item["title"] == self.book_title and list_item["author"] == self.book_author:
+                print(list_item)
 
 
 
