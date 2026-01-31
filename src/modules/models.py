@@ -40,6 +40,18 @@ class Library:
         Displays entire list of books.
         """
 
+    def borrow_book(self):
+        """
+        Allow user to borrow a book.
+        MAke book availability 'False'.
+        """
+
+    def return_book(self):
+        """
+        Allow user to return a book.
+        Make book availability 'True'.
+        """
+
 
 class User:
     """
