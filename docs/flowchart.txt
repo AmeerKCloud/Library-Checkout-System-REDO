@@ -49,10 +49,10 @@ library-checkout-system-REDO/
 ├── src/
 │   ├── main.py
 |   ├── __init__.py
+|   ├── config.py
 │   │
 │   ├── modules/
 │   │   ├── __init__.py
-|   |   ├── config.py
 │   │   ├── models.py
 │   │   └── utils.py
 │
