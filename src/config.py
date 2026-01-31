@@ -5,6 +5,10 @@
 # new to me and I have not been able to grasp it adequately, thus i failed to 
 # truly understand its functionality within the larger program.
 
+# - I will, however, still leave this code and it's related notes here for 
+# future sake when i may finally understand it and come back to correctly 
+# implement it within this program.
+
 
 from pathlib import Path
 
