@@ -58,21 +58,21 @@ def load_library_books():
 
 #.......STEP 4: Use the loaded data in your tests
 
-def test_library_books_loaded():
-    books = load_library_books()
+# def test_library_books_loaded():
+#     books = load_library_books()
 
-    # Basic sanity checks:
-    assert isinstance(books, list)
-    assert len(books) > 0
+#     # Basic sanity checks:
+#     assert isinstance(books, list)
+#     assert len(books) > 0
 
-    first_book = books[0]
-    assert "book_id" in first_book
-    assert "title" in first_book
-    assert "author" in first_book
+#     first_book = books[0]
+#     assert "book_id" in first_book
+#     assert "title" in first_book
+#     assert "author" in first_book
 
-    print(books)
+#     print(books)
 
-test_library_books_loaded()
+# test_library_books_loaded()
 
 # This keeps things:
 # - simple

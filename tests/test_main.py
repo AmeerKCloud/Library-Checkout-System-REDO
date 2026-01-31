@@ -34,7 +34,7 @@
 # import sys
 # print(sys.path)
 
-print(DATA_DIR)
+# print(DATA_DIR)
 
 
 # def test_addition():
