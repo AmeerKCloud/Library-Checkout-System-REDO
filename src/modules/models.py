@@ -27,10 +27,16 @@ class Book:
 
 class Library:
     """
-    Prints the entire list of books?
+    Prints the entire list of books.
+    
     """
     def __init__(self):
         pass
+
+    def show_books(self):
+        """
+        Displays entire list of books.
+        """
 
 class User:
     """
