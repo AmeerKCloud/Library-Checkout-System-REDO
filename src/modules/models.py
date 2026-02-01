@@ -63,6 +63,11 @@ class Library:
         self.book_title = book_title
         self.book_author = book_author
 
+        for item in self.library_data:
+            if item["title"] == self.book_title and item["author"] == self.book_author:
+                if item["available"] == False:
+                    print(f"{self.book_title} is not available.")
+
 class User:
     """
     Creates and keeps a record of of all
