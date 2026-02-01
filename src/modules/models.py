@@ -55,12 +55,13 @@ class Library:
                 if item["availability"] == True:
                     print(f"{self.book_title} is available.")
 
-    def return_book(self):
+    def return_book(self, book_title, book_author):
         """
         Allow user to return a book.
         Make book availability 'True'.
         """
-
+        self.book_title = book_title
+        self.book_author = book_author
 
 class User:
     """
