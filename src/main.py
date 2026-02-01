@@ -29,7 +29,7 @@ from modules.models import Book
 # print(load_library_books())
 
 while True:
-    user_choice = input("Enter one of the following:\n'a' for availability\n'b' for borrow\n'r' for return\n'e' to exit:\n").lower()
+    user_choice = input("Enter one of the following:\n'a' for availability\n'b' for borrow\n'r' for return\n'v' for viewing all titles\n'e' to exit:\n").lower()
 
     if user_choice == 'a':
         title = input("Enter book title:\n").upper()
