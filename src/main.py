@@ -50,6 +50,9 @@ while True:
             pass
 
         elif user_choice == 'r':
+            title = input("\nEnter book title:\n").upper()
+            author = input("Enter author name:\n").upper()
+            library.return_book(book_title=title, book_author=author)
             pass
 
         elif user_choice == 'v':
