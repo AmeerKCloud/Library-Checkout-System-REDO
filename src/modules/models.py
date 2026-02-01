@@ -28,7 +28,7 @@ class Library:
     Allows user to borrow a book
     or return a book.
     """
-    def __init__(self, book_title, book_author, library_data):
+    def __init__(self, library_data):
         self.book_title = book_title
         self.book_author = book_author
         self.library_data = library_data
@@ -44,11 +44,13 @@ class Library:
                 print(f"{key}: {value}")
             print("------------------------------")
 
-    def borrow_book(self):
+    def borrow_book(self, book_title, book_author):
         """
         Allow user to borrow a book.
         MAke book availability 'False'.
         """
+        self.book_title = book_title
+        self.book_author = book_author
 
     def return_book(self):
         """
