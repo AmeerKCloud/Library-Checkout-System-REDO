@@ -30,30 +30,31 @@ from modules.models import Book, Library
 
 while True:
     name = input("\nEnter your name to begin:\n").title()
-    library = Library(load_library_books())
-    user_choice = input("\nEnter one of the following:\n'a' for availability\n'b' for borrow\n'r' for return\n'v' for viewing all titles\n'e' to exit:\n").lower()
+    while True:
+        library = Library(load_library_books())
+        user_choice = input("\nEnter one of the following:\n'a' for availability\n'b' for borrow\n'r' for return\n'v' for viewing all titles\n'e' to exit:\n").lower()
 
-    if user_choice == 'a':
-        title = input("Enter book title:\n").upper()
-        author = input("Enter authors name:\n").upper()
+        if user_choice == 'a':
+            title = input("Enter book title:\n").upper()
+            author = input("Enter authors name:\n").upper()
 
-        book = Book(title, author, load_library_books())
-        book.is_available()
+            book = Book(title, author, load_library_books())
+            book.is_available()
 
-    elif user_choice == 'b':
-        title = input("\nEnter book title:\n").upper()
-        author = input("Enter author name:\n").upper()
-        library.borrow_book(book_title=title, book_author=author)
-        pass
+        elif user_choice == 'b':
+            title = input("\nEnter book title:\n").upper()
+            author = input("Enter author name:\n").upper()
+            library.borrow_book(book_title=title, book_author=author)
+            pass
 
-    elif user_choice == 'r':
-        pass
+        elif user_choice == 'r':
+            pass
 
-    elif user_choice == 'v':
-        library.show_books()
-        pass
+        elif user_choice == 'v':
+            library.show_books()
+            pass
 
-    else:
-        break
+        else:
+            break
 
 
