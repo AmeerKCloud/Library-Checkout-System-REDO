@@ -44,6 +44,9 @@ while True:
     elif user_choice == 'r':
         pass
 
+    elif user_choice == 'v':
+        pass
+
     else:
         break
 
