@@ -28,10 +28,13 @@ from modules.models import Book
 
 # print(load_library_books())
 
-title = input("Enter book title:\n").upper()
-author = input("Enter authors name:\n").upper()
+user_choice = input("Enter one of the following:\n'a' for availability\n'b' for borrow\n'r' for return\n'e' to exit:\n").lower()
 
-book = Book(title, author, load_library_books())
-book.is_available()
+if user_choice == 'a':
+    title = input("Enter book title:\n").upper()
+    author = input("Enter authors name:\n").upper()
+
+    book = Book(title, author, load_library_books())
+    book.is_available()
 
 
