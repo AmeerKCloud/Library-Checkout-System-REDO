@@ -29,8 +29,6 @@ class Library:
     or return a book.
     """
     def __init__(self, library_data):
-        self.book_title = book_title
-        self.book_author = book_author
         self.library_data = library_data
         pass
 
@@ -51,6 +49,11 @@ class Library:
         """
         self.book_title = book_title
         self.book_author = book_author
+
+        for item in self.library_data:
+            if item["title"] == self.book_title and item["author"] == self.book_author:
+                if item["availability"] == True:
+                    print(f"{self.book_title} is available.")
 
     def return_book(self):
         """
