@@ -21,9 +21,6 @@ class Book:
                     print(f"\n{self.book_title}, by {self.book_author}, is currently available ✅")
                 else:
                     print(f"\n{self.book_title}, by {self.book_author}, is currently unavailable ❌")
-                
-
-
 
 class Library:
     """
