@@ -30,7 +30,7 @@ from modules.models import Book, Library
 
 while True:
     name = input("\nEnter your name to begin:\n").title()
-    if name == "e":
+    if name == "E":
         break
     while True:
         library = Library(load_library_books())
