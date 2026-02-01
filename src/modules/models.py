@@ -36,6 +36,11 @@ class Library:
         """
         Displays entire list of books.
         """
+        print("\n_______ All of our titles: _______")
+        for item in self.library_data:
+            for key, value in item.items():
+                print(f"{key}: {value}")
+            print("------------------------------")
 
     def borrow_book(self):
         """
