@@ -24,11 +24,12 @@
 
 
 from modules.utils import load_library_books
-from modules.models import Book
+from modules.models import Book, Library
 
 # print(load_library_books())
 
 while True:
+    library = Library(None, None, load_library_books())
     user_choice = input("Enter one of the following:\n'a' for availability\n'b' for borrow\n'r' for return\n'v' for viewing all titles\n'e' to exit:\n").lower()
 
     if user_choice == 'a':
@@ -39,12 +40,15 @@ while True:
         book.is_available()
 
     elif user_choice == 'b':
+        title = input("\nEnter book title:\n").upper()
+        author = input("Enter author name:\n").upper()
         pass
 
     elif user_choice == 'r':
         pass
 
     elif user_choice == 'v':
+        library.show_books()
         pass
 
     else:

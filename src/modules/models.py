@@ -28,7 +28,9 @@ class Library:
     Allows user to borrow a book
     or return a book.
     """
-    def __init__(self, library_data):
+    def __init__(self, book_title, book_author, library_data):
+        self.book_title = book_title
+        self.book_author = book_author
         self.library_data = library_data
         pass
 
