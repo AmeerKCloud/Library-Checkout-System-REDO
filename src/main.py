@@ -30,6 +30,8 @@ from modules.models import Book, Library
 
 while True:
     name = input("\nEnter your name to begin:\n").title()
+    if name == "e":
+        break
     while True:
         library = Library(load_library_books())
         user_choice = input("\nEnter one of the following:\n'a' for availability\n'b' for borrow\n'r' for return\n'v' for viewing all titles\n'e' to exit:\n").lower()
