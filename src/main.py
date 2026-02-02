@@ -46,7 +46,8 @@ while True:
         elif user_choice == 'b':
             title = input("\nEnter book title:\n").upper()
             author = input("Enter author name:\n").upper()
-            library.borrow_book(book_title=title, book_author=author)
+            new_status, book_id = library.borrow_book(book_title=title, book_author=author)
+            update_library_books_availability(update_status=new_status, id_book=book_id)
             pass
 
         elif user_choice == 'r':

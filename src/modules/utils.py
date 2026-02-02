@@ -56,7 +56,7 @@ def load_library_books():
 # dictionaries, books will be a Python list of dict objects.
 
 #.......STEP 3.5 (my own addition): Update JSON book objects with new status.
-def update_library_books_availability(id_book, update_status):
+def update_library_books_availability(update_status, id_book):
     with BOOKS_JSON_PATH.open("r", encoding="utf-8") as f:
         books = json.load(f)
     
