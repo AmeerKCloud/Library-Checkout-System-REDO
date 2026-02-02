@@ -52,8 +52,8 @@ while True:
         elif user_choice == 'r':
             title = input("\nEnter book title:\n").upper()
             author = input("Enter author name:\n").upper()
-            library.return_book(book_title=title, book_author=author)
-            pass
+            new_status, book_id = library.return_book(book_title=title, book_author=author)
+            update_library_books_availability(update_status=new_status, id_book=book_id)
 
         elif user_choice == 'v':
             library.show_books()
