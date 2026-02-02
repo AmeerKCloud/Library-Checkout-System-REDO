@@ -77,14 +77,22 @@ class User:
     Creates and keeps a record of all of
     a users borrowed and returned books.
     """
+
+    user_books_history = {
+        "borrowed": [],
+        "returned": [],
+    }
+
     def __init__(self, user_name, title, author, date):
         self.user_name = user_name
         self.title = title
         self.author = author
+        self.date = date
         pass
 
     def borrowed_book(self):
         """Makes a list of all of a users borrowed books."""
+
 
     def returned_book(self):
         """Makes a list of all of a users borrowed books."""
