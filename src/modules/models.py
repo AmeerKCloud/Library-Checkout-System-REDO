@@ -9,13 +9,13 @@ class Book:
     Returns True if it is, False if its not.
     Does not store anything.
     """
-    def __init__(self, book_title, book_author, library_data):
+    def __init__(self, book_title, book_author, json_library_data):
         self.book_title = book_title
         self.book_author = book_author
-        self.library_data = library_data
+        self.json_library_data = json_library_data
 
     def is_available(self):
-        for list_item in self.library_data:
+        for list_item in self.json_library_data:
             if list_item["title"] == self.book_title and list_item["author"] == self.book_author:
                 if list_item["available"] == True:
                     print(f"\n{self.book_title}, by {self.book_author}, is currently available ✅")
@@ -28,8 +28,8 @@ class Library:
     Allows user to borrow a book
     or return a book.
     """
-    def __init__(self, library_data):
-        self.library_data = library_data
+    def __init__(self, json_library_data):
+        self.json_library_data = json_library_data
         pass
 
     def show_books(self):
@@ -37,7 +37,7 @@ class Library:
         Displays entire list of books.
         """
         print("\n_______ All of our titles: _______")
-        for item in self.library_data:
+        for item in self.json_library_data:
             for key, value in item.items():
                 print(f"{key}: {value}")
             print("------------------------------")
@@ -50,7 +50,7 @@ class Library:
         self.book_title = book_title
         self.book_author = book_author
 
-        for item in self.library_data:
+        for item in self.json_library_data:
             if item["title"] == self.book_title and item["author"] == self.book_author:
                 if item["available"] == True:
                     print(f"You just borrowed {self.book_title}, by {self.book_author}.")
@@ -65,7 +65,7 @@ class Library:
         self.book_title = book_title
         self.book_author = book_author
 
-        for item in self.library_data:
+        for item in self.json_library_data:
             if item["title"] == self.book_title and item["author"] == self.book_author:
                 if item["available"] == False:
                     print(f"You just returned {self.book_title}, by {self.book_author}.")
@@ -83,7 +83,7 @@ class User:
         "returned": {},
     }
 
-    def __init__(self, user_name, title, author, date):
+    def __init__(self, user_name, title, author, date, json_library_data):
         self.user_name = user_name
         self.title = title
         self.author = author
@@ -92,7 +92,7 @@ class User:
 
     def borrowed_book(self):
         """Makes a list of all of a users borrowed books."""
-        
+        borrowed = []
 
 
 
