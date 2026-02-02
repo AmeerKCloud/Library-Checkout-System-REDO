@@ -79,8 +79,8 @@ class User:
     """
 
     user_books_history = {
-        "borrowed": [],
-        "returned": [],
+        "borrowed": {},
+        "returned": {},
     }
 
     def __init__(self, user_name, title, author, date):
@@ -92,7 +92,7 @@ class User:
 
     def borrowed_book(self):
         """Makes a list of all of a users borrowed books."""
-        borrowed_books[] = {}
+        
 
 
 
