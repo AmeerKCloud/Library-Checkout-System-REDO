@@ -92,7 +92,15 @@ class User:
 
     def borrowed_book(self):
         """Makes a list of all of a users borrowed books."""
-        borrowed = []
+        borrowed_list = []
+        borrowed_book_dict = {}
+
+        for item in self.json_library_data:
+            for key, value in item.items():
+                borrowed_book_dict[key] = value
+            borrowed_list.append(borrowed_book_dict)
+        
+        
 
 
 
