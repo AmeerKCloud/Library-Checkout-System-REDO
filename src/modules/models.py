@@ -92,6 +92,8 @@ class User:
 
     def borrowed_book(self):
         """Makes a list of all of a users borrowed books."""
+        borrowed_books = {}
+
 
 
     def returned_book(self):
