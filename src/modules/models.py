@@ -83,11 +83,11 @@ class User:
         "returned": {},
     }
 
-    def __init__(self, user_name, title, author, date, json_library_data):
+    def __init__(self, user_name, book_title, book_author, todays_date, json_library_data):
         self.user_name = user_name
-        self.title = title
-        self.author = author
-        self.date = date
+        self.book_title = book_title
+        self.book_author = book_author
+        self.todays_date = todays_date
         self.json_library_data = json_library_data
 
     def borrowed_book(self):

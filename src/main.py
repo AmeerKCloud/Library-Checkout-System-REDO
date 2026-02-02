@@ -24,7 +24,7 @@
 
 
 from modules.utils import load_library_books, update_library_books_availability
-from modules.models import Book, Library
+from modules.models import Book, Library, User
 
 # print(load_library_books())
 
@@ -45,8 +45,10 @@ while True:
         elif user_choice == 'b':
             title = input("\nEnter book title:\n").upper()
             author = input("Enter author name:\n").upper()
+            date = input("Enter todays date:\n")
             new_status, book_id = library.borrow_book(book_title=title, book_author=author)
             update_library_books_availability(update_status=new_status, id_book=book_id)
+            user = User(name, title, author, date, load_library_books())
 
         elif user_choice == 'r':
             title = input("\nEnter book title:\n").upper()
