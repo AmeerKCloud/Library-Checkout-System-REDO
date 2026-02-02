@@ -88,7 +88,7 @@ class User:
         self.title = title
         self.author = author
         self.date = date
-        pass
+        self.json_library_data = json_library_data
 
     def borrowed_book(self):
         """Makes a list of all of a users borrowed books."""
