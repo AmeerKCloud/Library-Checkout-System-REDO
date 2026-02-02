@@ -55,7 +55,7 @@ def load_library_books():
 # Assuming your JSON looks like a top-level list of book 
 # dictionaries, books will be a Python list of dict objects.
 
-
+#.......STEP 3.5 (my own addition): Update JSON book objects with new status.
 def update_library_books_availability(id_book, update_status):
     with BOOKS_JSON_PATH.open("r", encoding="utf-8") as f:
         books = json.load(f)
