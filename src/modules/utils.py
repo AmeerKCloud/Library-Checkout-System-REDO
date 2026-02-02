@@ -56,11 +56,16 @@ def load_library_books():
 # dictionaries, books will be a Python list of dict objects.
 
 
-def update_library_books_availability():
+def update_library_books_availability(id_book, update_status):
     with BOOKS_JSON_PATH.open("r", encoding="utf-8") as f:
         books = json.load(f)
-    return books
-    pass
+    
+    for book in books:
+        if book["book_id"] == id_book:
+            book["available"] = update_status
+    
+    with BOOKS_JSON_PATH.open("w", encoding="utf-8") as f:
+        json.dump(books, f, indent=2)
 
 #.......STEP 4: Use the loaded data in your tests
 
