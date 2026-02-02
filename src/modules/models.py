@@ -74,7 +74,7 @@ class Library:
 
 class User:
     """
-    Creates and keeps a record of of all
+    Creates and keeps a record of all of
     a users borrowed and returned books.
     """
     def __init__(self, user_name):

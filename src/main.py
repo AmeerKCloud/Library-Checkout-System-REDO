@@ -57,7 +57,6 @@ while True:
 
         elif user_choice == 'v':
             library.show_books()
-            pass
 
         else:
             break
