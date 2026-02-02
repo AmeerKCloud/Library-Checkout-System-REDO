@@ -77,8 +77,10 @@ class User:
     Creates and keeps a record of all of
     a users borrowed and returned books.
     """
-    def __init__(self, user_name):
+    def __init__(self, user_name, title, author, date):
         self.user_name = user_name
+        self.title = title
+        self.author = author
         pass
 
     def borrowed_book(self):

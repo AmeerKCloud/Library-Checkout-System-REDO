@@ -39,7 +39,6 @@ while True:
         if user_choice == 'a':
             title = input("Enter book title:\n").upper()
             author = input("Enter authors name:\n").upper()
-
             book = Book(title, author, load_library_books())
             book.is_available()
 
