@@ -53,7 +53,9 @@ class Library:
         for item in self.library_data:
             if item["title"] == self.book_title and item["author"] == self.book_author:
                 if item["available"] == True:
-                    print(f"{self.book_title} is available.")
+                    print(f"You just borrowed {self.book_title}.")
+                    new_status = False
+                    return new_status, item["book_id"]
 
     def return_book(self, book_title, book_author):
         """
