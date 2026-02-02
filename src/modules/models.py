@@ -53,7 +53,7 @@ class Library:
         for item in self.library_data:
             if item["title"] == self.book_title and item["author"] == self.book_author:
                 if item["available"] == True:
-                    print(f"You just borrowed {self.book_title}.")
+                    print(f"You just borrowed {self.book_title}, by {self.book_author}.")
                     new_status = False
                     return new_status, item["book_id"]
 
@@ -68,7 +68,9 @@ class Library:
         for item in self.library_data:
             if item["title"] == self.book_title and item["author"] == self.book_author:
                 if item["available"] == False:
-                    print(f"{self.book_title} is not available.")
+                    print(f"You just returned {self.book_title}, by {self.book_author}.")
+                    new_status = True
+                    return new_status, item["book_id"]
 
 class User:
     """
