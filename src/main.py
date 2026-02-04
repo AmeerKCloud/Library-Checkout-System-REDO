@@ -76,7 +76,7 @@ while True:
 
 # TODO: 
 # Need to add date functionality to main program.
-# - Also need to add it to 'borrowed_book', 'view_borrowed_history', 'returned_book', 'view_returned_history'.
+# - Also need to add it to 'borrowed_book', 'view_borrowed_history', 'returned_book', 'view_returned_history' in the User class.
 
 # Need to add additional menu functionalities
 # - Then transfer them to the utils.py file in their own 'inputs' class.
