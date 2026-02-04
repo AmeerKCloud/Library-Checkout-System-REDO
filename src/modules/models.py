@@ -83,15 +83,17 @@ class User:
         "returned": {},
     }
 
-    def __init__(self, user_name, book_title, book_author, todays_date, json_library_data):
+    def __init__(self):
+        pass
+
+    def borrowed_book(self, user_name, book_title, book_author, todays_date, json_library_data):
+        """Makes a list of all of a users borrowed books."""
         self.user_name = user_name
         self.book_title = book_title
         self.book_author = book_author
         self.todays_date = todays_date
         self.json_library_data = json_library_data
 
-    def borrowed_book(self):
-        """Makes a list of all of a users borrowed books."""
         if self.user_name not in User.user_books_history["borrowed"]:
             User.user_books_history["borrowed"][self.user_name] = []            #⬅️ Initiates empty list
 

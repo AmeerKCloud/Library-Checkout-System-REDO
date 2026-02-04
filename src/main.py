@@ -33,7 +33,9 @@ while True:
     if name == "E":
         break
     while True:
-        library = Library(load_library_books())
+        library = Library(load_library_books())             #⬅️ Create the class objects.
+        user = User()
+
         user_choice = input("\nEnter one of the following:\n'a' for availability\n'b' for borrow\n'r' for return\n'v' for viewing all titles\n'c' for currently returned or borrowed books\n'e' to exit:\n").lower()
 
         if user_choice == 'a':
@@ -48,8 +50,7 @@ while True:
             date = input("Enter todays date:\n")
             new_status, book_id = library.borrow_book(book_title=title, book_author=author)
             update_library_books_availability(update_status=new_status, id_book=book_id)
-            user = User(name, title, author, date, load_library_books())
-            user.borrowed_book()
+            user.borrowed_book(name, title, author, date, load_library_books())
 
         elif user_choice == 'r':
             title = input("\nEnter book title:\n").upper()
@@ -59,6 +60,9 @@ while True:
 
         elif user_choice == 'v':
             library.show_books()
+
+        elif user_choice == 'c':
+
 
         else:
             break
