@@ -93,7 +93,7 @@ class User:
     def borrowed_book(self):
         """Makes a list of all of a users borrowed books."""
         if self.user_name not in User.user_books_history["borrowed"]:
-            User.user_books_history["borrowed"][self.user_name] = []
+            User.user_books_history["borrowed"][self.user_name] = []            #⬅️ Initiates empty list
 
         borrowed_book_dict = {}
 
