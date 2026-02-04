@@ -107,3 +107,7 @@ def test_library_books_loaded():
 # - easy to change later (e.g., if you move the file)
 
 #---------------------------------------------JSON-Related (+ explanations)⬆️------------------------------------------------
+
+class UserInputs:
+    def __init__(self):
+        pass
