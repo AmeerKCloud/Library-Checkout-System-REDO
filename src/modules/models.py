@@ -125,14 +125,14 @@ class User:
         self.todays_date = todays_date
         self.json_library_data = json_library_data
 
-        if self.user_name not in User.user_books_history["borrowed"]:
-            User.user_books_history["borrowed"][self.user_name] = []            #⬅️ Initiates empty list
+        if self.user_name not in User.user_books_history["returned"]:
+            User.user_books_history["returned"][self.user_name] = []            #⬅️ Initiates empty list
 
-        borrowed_book_dict = {}
+        returned_book_dict = {}
 
         for item in self.json_library_data:
             if item["title"] == self.book_title and item["author"] == self.book_author:
                 for key, value in item.items():
-                    borrowed_book_dict[key] = value
-                User.user_books_history["borrowed"][self.user_name].append(borrowed_book_dict)
+                    returned_book_dict[key] = value
+                User.user_books_history["returned"][self.user_name].append(returned_book_dict)
         print(User.user_books_history)
