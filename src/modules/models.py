@@ -116,10 +116,23 @@ class User:
             for item in User.user_books_history["borrowed"]:
                 for key, value in item.items():
                     print()
-        
 
-
-
-
-    def returned_book(self):
+    def returned_book(self, user_name, book_title, book_author, todays_date, json_library_data):
         """Makes a list of all of a users borrowed books."""
+        self.user_name = user_name
+        self.book_title = book_title
+        self.book_author = book_author
+        self.todays_date = todays_date
+        self.json_library_data = json_library_data
+
+        if self.user_name not in User.user_books_history["borrowed"]:
+            User.user_books_history["borrowed"][self.user_name] = []            #⬅️ Initiates empty list
+
+        borrowed_book_dict = {}
+
+        for item in self.json_library_data:
+            if item["title"] == self.book_title and item["author"] == self.book_author:
+                for key, value in item.items():
+                    borrowed_book_dict[key] = value
+                User.user_books_history["borrowed"][self.user_name].append(borrowed_book_dict)
+        print(User.user_books_history)
