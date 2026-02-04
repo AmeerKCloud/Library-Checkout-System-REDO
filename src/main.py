@@ -62,7 +62,7 @@ while True:
             library.show_books()
 
         elif user_choice == 'c':
-
+            menu_2_options = input("Choose one of the following:\n'b' to view currently borrowed titles\n'r' to view all returned titles:\n")
 
         else:
             break
