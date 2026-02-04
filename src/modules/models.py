@@ -97,7 +97,7 @@ class User:
         if self.user_name not in User.user_books_history["borrowed"]:
             User.user_books_history["borrowed"][self.user_name] = []            #⬅️ Initiates empty list
 
-        borrowed_book_dict = {}
+        borrowed_book_dict = {}                                                 #⬅️ Initiates borrowed books dict to be appended to empty list
 
         for item in self.json_library_data:
             if item["title"] == self.book_title and item["author"] == self.book_author:
@@ -128,7 +128,7 @@ class User:
         if self.user_name not in User.user_books_history["returned"]:
             User.user_books_history["returned"][self.user_name] = []            #⬅️ Initiates empty list
 
-        returned_book_dict = {}
+        returned_book_dict = {}                                                 #⬅️ Initiates returned books dict to be appended to empty list
 
         for item in self.json_library_data:
             if item["title"] == self.book_title and item["author"] == self.book_author:
