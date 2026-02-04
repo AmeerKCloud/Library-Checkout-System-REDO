@@ -103,6 +103,9 @@ class User:
                     borrowed_book_dict[key] = value
                 User.user_books_history["borrowed"][self.user_name].append(borrowed_book_dict)
         print(User.user_books_history)
+
+    def view_borrowed_history(self):
+        
         
 
 
