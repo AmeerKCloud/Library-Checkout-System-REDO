@@ -106,7 +106,9 @@ class User:
                 User.user_books_history["borrowed"][self.user_name].append(borrowed_book_dict)
         print(User.user_books_history)
 
-    def view_borrowed_history(self):
+    def view_borrowed_history(self, user_name):
+        self.user_name = user_name
+        
         if self.user_name not in User.user_books_history["borrowed"]:
             print(f"Sorry, {self.user_name} has no currently borrowed books to show. ☹️")
         else:
