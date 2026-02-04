@@ -112,10 +112,11 @@ class User:
         if self.user_name not in User.user_books_history["borrowed"]:
             print(f"\nSorry, {self.user_name} has no currently borrowed books to show. ☹️")
         else:
-            print(f"All currently borrowed books for {self.user_name}:")
+            print(f"---------- All currently borrowed books for {self.user_name} ----------:")
             for item in User.user_books_history["borrowed"]:
                 for key, value in item.items():
-                    print()
+                    print(f"{key}: {value}")
+                print("_________________________")
 
     def returned_book(self, user_name, book_title, book_author, todays_date, json_library_data):
         """Makes a list of all of a users borrowed books."""
@@ -136,3 +137,15 @@ class User:
                     returned_book_dict[key] = value
                 User.user_books_history["returned"][self.user_name].append(returned_book_dict)
         print(User.user_books_history)
+
+    def view_returned_history(self, user_name):
+        self.user_name = user_name
+
+        if self.user_name not in User.user_books_history["returned"]:
+            print(f"\nSorry, {self.user_name} has no currently returned books to show. ☹️")
+        else:
+            print(f"---------- All currently returned books for {self.user_name} ----------:")
+            for item in User.user_books_history["returned"]:
+                for key, value in item.items():
+                    print(f"{key}: {value}")
+                print("_________________________")
