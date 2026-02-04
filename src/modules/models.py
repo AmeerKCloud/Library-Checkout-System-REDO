@@ -102,7 +102,7 @@ class User:
                 for key, value in item.items():
                     borrowed_book_dict[key] = value
                 User.user_books_history["borrowed"][self.user_name].append(borrowed_book_dict)
-            print(User.user_books_history)
+        print(User.user_books_history)
         
 
 
