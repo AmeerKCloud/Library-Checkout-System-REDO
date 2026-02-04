@@ -55,8 +55,10 @@ while True:
         elif menu_1_options == 'r':
             title = input("\nEnter book title:\n").upper()
             author = input("Enter author name:\n").upper()
+            date = input("Enter todays date:\n")
             new_status, book_id = library.return_book(book_title=title, book_author=author)
             update_library_books_availability(update_status=new_status, id_book=book_id)
+            user.returned_book(name, title, author, date, load_library_books())
 
         elif menu_1_options == 'v':
             library.show_books()
