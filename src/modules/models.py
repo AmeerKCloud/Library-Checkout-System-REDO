@@ -113,7 +113,7 @@ class User:
             print(f"\nSorry, {self.user_name} has no currently borrowed books to show. ☹️")
         else:
             print(f"---------- All currently borrowed books for {self.user_name} ----------:")
-            for item in User.user_books_history["borrowed"]:
+            for item in User.user_books_history["borrowed"][self.user_name]:
                 for key, value in item.items():
                     print(f"{key}: {value}")
                 print("_________________________")
@@ -145,7 +145,7 @@ class User:
             print(f"\nSorry, {self.user_name} has no currently returned books to show. ☹️")
         else:
             print(f"---------- All currently returned books for {self.user_name} ----------:")
-            for item in User.user_books_history["returned"]:
+            for item in User.user_books_history["returned"][self.user_name]:
                 for key, value in item.items():
                     print(f"{key}: {value}")
                 print("_________________________")
