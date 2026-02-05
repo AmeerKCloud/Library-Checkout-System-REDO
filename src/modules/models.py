@@ -50,15 +50,19 @@ class Library:
         self.book_title = book_title
         self.book_author = book_author
 
-        for item in self.json_library_data:
-            if item["title"] == self.book_title and item["author"] == self.book_author:
-                if item["available"] == True:
-                    print(f"You just borrowed {self.book_title}, by {self.book_author}.")
-                    new_status = False
-                    return new_status, item["book_id"]
-            else:
-                print(f"\nSorry, we were unable to find {self.book_title}, by {self.book_author}.")
-                print("Perhaps check your spelling or review our available list?")
+        len_library_data = len(self.json_library_data)
+
+        for index in len_library_data:
+            index -= 1
+            for item in self.json_library_data:
+                if item["title"] == self.book_title and item["author"] == self.book_author:
+                    if item["available"] == True:
+                        print(f"You just borrowed {self.book_title}, by {self.book_author}.")
+                        new_status = False
+                        return new_status, item["book_id"]
+        if index == 0:
+            print(f"\nSorry, we were unable to find {self.book_title}, by {self.book_author}.")
+            print("Perhaps check your spelling or review our available list?")
 
     def return_book(self, book_title, book_author):
         """
@@ -155,3 +159,6 @@ class User:
                 for key, value in item.items():
                     print(f"{key}: {value}")
                 print("_________________________")
+
+# NOTE: Progress Report:
+# Currently @ 'Library' class, @ 'borrow_book' function trying to figure out how to borrow book & do countdown.
