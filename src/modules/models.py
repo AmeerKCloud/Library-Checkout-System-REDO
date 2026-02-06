@@ -64,6 +64,7 @@ class Library:
             if index == 0:
                 print(f"\nSorry, we were unable to find {self.book_title}, by {self.book_author}.")
                 print("Perhaps check your spelling or review our available list?")
+                # return False
 
     def return_book(self, book_title, book_author):
         """
