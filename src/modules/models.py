@@ -62,10 +62,10 @@ class Library:
                 else:
                     len_library_data -= 1
                     print(len_library_data)
-                    if len_library_data == 0:
-                        print(f"\nSorry, we were unable to find {self.book_title}, by {self.book_author}.")
-                        print("Perhaps check your spelling or review our available list?")
-                        break
+            if len_library_data < 0:
+                print(f"\nSorry, we were unable to find {self.book_title}, by {self.book_author}.")
+                print("Perhaps check your spelling or review our available list?")
+                break
 
 
 
