@@ -52,19 +52,21 @@ class Library:
 
         len_library_data = len(self.json_library_data)
 
-        for number in range(len_library_data):
+        while True:
             for item in self.json_library_data:
-                len_library_data -= 1
                 if item["title"] == self.book_title and item["author"] == self.book_author:
                     if item["available"] == True:
                         print(f"You just borrowed {self.book_title}, by {self.book_author}.")
                         new_status = False
                         return new_status, item["book_id"]
-                print(len_library_data)
-            if len_library_data == 0:
-                print(f"\nSorry, we were unable to find {self.book_title}, by {self.book_author}.")
-                print("Perhaps check your spelling or review our available list?")
-                # return False
+                else:
+                    len_library_data -= 1
+                    if len_library_data == 0:
+                        print(f"\nSorry, we were unable to find {self.book_title}, by {self.book_author}.")
+                        print("Perhaps check your spelling or review our available list?")
+                        break
+
+
 
     def return_book(self, book_title, book_author):
         """
