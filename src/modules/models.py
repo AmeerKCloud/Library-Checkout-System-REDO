@@ -53,7 +53,8 @@ class Library:
         len_library_data = len(self.json_library_data)
 
         for index in range(len_library_data):
-            index -= 1
+            len_library_data -= 1
+            print(len_library_data)
             for item in self.json_library_data:
                 if item["title"] == self.book_title and item["author"] == self.book_author:
                     if item["available"] == True:
