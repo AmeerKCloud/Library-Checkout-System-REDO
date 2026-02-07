@@ -65,7 +65,7 @@ class Library:
             if len_library_data == 0:
                 print(f"\nSorry, we were unable to find {self.book_title}, by {self.book_author}.")
                 print("Perhaps check your spelling or review our available list?")
-                break
+                return False, False
 
 
 
