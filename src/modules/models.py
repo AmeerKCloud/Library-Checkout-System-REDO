@@ -86,6 +86,7 @@ class Library:
             else:
                 print(f"\nSorry, we were unable to find {self.book_title}, by {self.book_author}.")
                 print("Perhaps check your spelling or review your borrowed-book history on file?")
+                return False, False
 
 class User:
     """
