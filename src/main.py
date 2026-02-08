@@ -97,3 +97,5 @@ while True:
 # - Then transfer them to the utils.py file in their own 'inputs' class.
 
 # Need to condense code as practically as is possible.
+
+# Need functionality that removed book from borrowed history once its returned(& vice versa?)
