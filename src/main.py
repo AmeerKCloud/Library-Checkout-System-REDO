@@ -104,3 +104,6 @@ while True:
 # - Currently fixing 'return_book()' funct inside 'Library' class
 # > It's not matching user-entered title and author with what is on the JSON data base
 # > > Keeps triggering the 'else'.
+# > > The problem appears to be that the availability of the borrowed book in the version 
+# of the json data saved within the 'return_book()' funct. doesn't change from 'True' to 
+# 'False' in order for the logic within the funct. to check for it and return it.
