@@ -107,3 +107,4 @@ while True:
 # > > The problem appears to be that the availability of the borrowed book in the version 
 # of the json data saved within the 'return_book()' funct. doesn't change from 'True' to 
 # 'False' in order for the logic within the funct. to check for it and return it.
+# > > > IMPORTANT: Find out what is causing this.

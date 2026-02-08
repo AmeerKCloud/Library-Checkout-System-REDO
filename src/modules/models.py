@@ -85,7 +85,7 @@ class Library:
                 len_library_data -= 1
                 print(len_library_data)
                 if item["title"] == self.book_title and item["author"] == self.book_author:
-                    if item["available"] == False:
+                    if item["available"] == False:      #⬅️ This is not being checked because availability is not being 'False'
                         print(f"You just returned {self.book_title}, by {self.book_author}.")
                         new_status = True
                         return new_status, item["book_id"]
