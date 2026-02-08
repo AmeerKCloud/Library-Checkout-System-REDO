@@ -39,48 +39,49 @@ while True:
     while True:
         menu_1_options = input("\nEnter one of the following:\n'a' for availability\n'b' for borrow\n'r' for return\n'v' for viewing all titles\n'c' for currently returned or borrowed books\n'e' to exit:\n").lower()
 
-        if menu_1_options == 'a':
-            title = input("Enter book title:\n").upper()
-            author = input("Enter authors name:\n").upper()
-            book = Book(title, author, load_library_books())
-            book.is_available()
+        while True:
+            if menu_1_options == 'a':
+                title = input("Enter book title:\n").upper()
+                author = input("Enter authors name:\n").upper()
+                book = Book(title, author, load_library_books())
+                book.is_available()
 
-        elif menu_1_options == 'b':
-            title = input("\nEnter book title:\n").upper()
-            author = input("Enter author name:\n").upper()
-            date = input("Enter todays date:\n")
-            new_status, book_id = library.borrow_book(book_title=title, book_author=author)
+            elif menu_1_options == 'b':
+                title = input("\nEnter book title:\n").upper()
+                author = input("Enter author name:\n").upper()
+                date = input("Enter todays date:\n")
+                new_status, book_id = library.borrow_book(book_title=title, book_author=author)
 
-            if new_status != False and book_id != False:
-                update_library_books_availability(update_status=new_status, id_book=book_id)
-                user.borrowed_book(name, title, author, date, load_library_books())
+                if new_status != False and book_id != False:
+                    update_library_books_availability(update_status=new_status, id_book=book_id)
+                    user.borrowed_book(name, title, author, date, load_library_books())
+                else:
+                    break
+
+            elif menu_1_options == 'r':
+                title = input("\nEnter book title:\n").upper()
+                author = input("Enter author name:\n").upper()
+                date = input("Enter todays date:\n")
+                new_status, book_id = library.return_book(book_title=title, book_author=author)
+                
+                if new_status != False and book_id != False:
+                    update_library_books_availability(update_status=new_status, id_book=book_id)
+                    user.returned_book(name, title, author, date, load_library_books())
+                else:
+                    break
+
+            elif menu_1_options == 'v':
+                library.show_books()
+
+            elif menu_1_options == 'c':
+                menu_2_options = input("Choose one of the following:\n'b' to view currently borrowed titles\n'r' to view all returned titles:\n").lower()
+                if menu_2_options == 'b':
+                    user.view_borrowed_history(user_name=name)
+                elif menu_2_options == 'r':
+                    user.view_returned_history(user_name=name)
+
             else:
                 break
-
-        elif menu_1_options == 'r':
-            title = input("\nEnter book title:\n").upper()
-            author = input("Enter author name:\n").upper()
-            date = input("Enter todays date:\n")
-            new_status, book_id = library.return_book(book_title=title, book_author=author)
-            
-            if new_status != False and book_id != False:
-                update_library_books_availability(update_status=new_status, id_book=book_id)
-                user.returned_book(name, title, author, date, load_library_books())
-            else:
-                break
-
-        elif menu_1_options == 'v':
-            library.show_books()
-
-        elif menu_1_options == 'c':
-            menu_2_options = input("Choose one of the following:\n'b' to view currently borrowed titles\n'r' to view all returned titles:\n").lower()
-            if menu_2_options == 'b':
-                user.view_borrowed_history(user_name=name)
-            elif menu_2_options == 'r':
-                user.view_returned_history(user_name=name)
-
-        else:
-            break
 
 
 
