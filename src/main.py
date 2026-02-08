@@ -76,6 +76,8 @@ while True:
                     user.view_borrowed_history(user_name=name)
                 elif menu_2_options == 'r':
                     user.view_returned_history(user_name=name)
+                else:
+                    break
 
         else:
             break
