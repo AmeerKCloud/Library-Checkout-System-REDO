@@ -54,8 +54,6 @@ while True:
             if new_status != False and book_id != False:
                 update_library_books_availability(update_status=new_status, id_book=book_id)
                 user.borrowed_book(name, title, author, date, load_library_books())
-            else:
-                break
 
         elif menu_1_options == 'r':
             title = input("\nEnter book title:\n").upper()
@@ -66,8 +64,6 @@ while True:
             if new_status != False and book_id != False:
                 update_library_books_availability(update_status=new_status, id_book=book_id)
                 user.returned_book(name, title, author, date, load_library_books())
-            else:
-                break
 
         elif menu_1_options == 'v':
             library.show_books()
