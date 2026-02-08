@@ -99,3 +99,8 @@ while True:
 # Need to condense code as practically as is possible.
 
 # Need functionality that removed book from borrowed history once its returned(& vice versa?)
+
+# Progress report:
+# - Currently fixing 'return_book()' funct inside 'Library' class
+# > It's not matching user-entered title and author with what is on the JSON data base
+# > > Keeps triggering the 'else'.
