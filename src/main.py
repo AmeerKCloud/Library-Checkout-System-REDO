@@ -63,7 +63,7 @@ while True:
             date = input("Enter todays date:\n")
             new_status, book_id = library.return_book(book_title=title, book_author=author)
             
-            if new_status != False and book_id != False:
+            if new_status != None and book_id != None:
                 update_library_books_availability(update_status=new_status, id_book=book_id)
                 user.returned_book(name, title, author, date, load_library_books())
 
@@ -73,7 +73,7 @@ while True:
         elif menu_1_options == 'c':
 
             while True:
-                menu_2_options = input("Choose one of the following:\n'b' to view currently borrowed titles\n'r' to view all returned titles:\n").lower()
+                menu_2_options = input("\nChoose one of the following:\n'b' to view currently borrowed titles\n'r' to view all returned titles:\n").lower()
                 if menu_2_options == 'b':
                     user.view_borrowed_history(user_name=name)
                 elif menu_2_options == 'r':
