@@ -77,13 +77,17 @@ class Library:
         self.book_title = book_title
         self.book_author = book_author
 
-        for item in self.json_library_data:
-            if item["title"] == self.book_title and item["author"] == self.book_author:
-                if item["available"] == False:
-                    print(f"You just returned {self.book_title}, by {self.book_author}.")
-                    new_status = True
-                    return new_status, item["book_id"]
-            else:
+        len_library_data = len(self.json_library_data)
+
+        for index in range(len_library_data):
+            len_library_data -= 1
+            for item in self.json_library_data:
+                if item["title"] == self.book_title and item["author"] == self.book_author:
+                    if item["available"] == False:
+                        print(f"You just returned {self.book_title}, by {self.book_author}.")
+                        new_status = True
+                        return new_status, item["book_id"]
+            if len_library_data == 0:
                 print(f"\nSorry, we were unable to find {self.book_title}, by {self.book_author}.")
                 print("Perhaps check your spelling or review your borrowed-book history on file?")
                 return None, None
