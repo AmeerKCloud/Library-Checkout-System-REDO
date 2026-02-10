@@ -33,10 +33,10 @@ while True:
     if name == "E":
         break
 
-    user = User()             #⬅️ Create the class objects.
+    user = User()             #⬅️ Create the class object
 
     while True:
-        library = Library(load_library_books())
+        library = Library(load_library_books())   #⬅️ Moved inside 2nd while-loop otherwise updated json data is NOT retrieved by program
 
         menu_1_options = input("\nEnter one of the following:\n'a' for availability\n'b' for borrow\n'r' for return\n'v' for viewing all titles\n'c' for currently returned or borrowed books\n'e' to exit:\n").lower()
 
