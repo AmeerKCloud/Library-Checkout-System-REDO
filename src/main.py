@@ -33,10 +33,12 @@ while True:
     if name == "E":
         break
 
-    library = Library(load_library_books())             #⬅️ Create the class objects.
+    # library = Library(load_library_books())             #⬅️ Create the class objects.
     user = User()
 
     while True:
+        library = Library(load_library_books())
+
         menu_1_options = input("\nEnter one of the following:\n'a' for availability\n'b' for borrow\n'r' for return\n'v' for viewing all titles\n'c' for currently returned or borrowed books\n'e' to exit:\n").lower()
 
         if menu_1_options == 'a':
