@@ -33,8 +33,7 @@ while True:
     if name == "E":
         break
 
-    # library = Library(load_library_books())             #⬅️ Create the class objects.
-    user = User()
+    user = User()             #⬅️ Create the class objects.
 
     while True:
         library = Library(load_library_books())
