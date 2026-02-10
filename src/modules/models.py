@@ -161,6 +161,12 @@ class User:
                 User.user_books_history["returned"][self.user_name].append(returned_book_dict)
         print(User.user_books_history)
 
+        # for key in User.user_books_history:
+        #     if key == ""
+        for item in User.user_books_history["borrowed"][self.user_name]:
+            if self.book_title in User.user_books_history["borrowed"][self.user_name][item] and self.book_author in User.user_books_history["borrowed"][self.user_name][item]:
+                User.user_books_history["borrowed"][self.user_name].pop(item)
+
     def view_returned_history(self, user_name):
         self.user_name = user_name
 
