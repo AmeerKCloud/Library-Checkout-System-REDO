@@ -102,10 +102,15 @@ while True:
 # Need functionality that removed book from borrowed history once its returned(& vice versa?)
 
 # Progress report:
-# - Currently fixing 'return_book()' funct inside 'Library' class
+# - BUG: Currently fixing 'return_book()' funct inside 'Library' class
 # > It's not matching user-entered title and author with what is on the JSON data base
-# > > Keeps triggering the 'else'.
+# > > Keeps triggering the 'else' statement in conditional statement.
 # > > The problem appears to be that the availability of the borrowed book in the version 
 # of the json data saved within the 'return_book()' funct. doesn't change from 'True' to 
 # 'False' in order for the logic within the funct. to check for it and return it.
 # > > > IMPORTANT: Find out what is causing this.
+# RESOLVED: Issue was that 'library = Library(load_library_books())', AKA JSON data input, was outside of 2nd while-loop in main program
+# > This was not allowing the updated JSON data file to be accessed by the code within the 2nd while loop
+# > Because the JSON data would only load once from the 1st while-loop & be updated once by the code in the 2nd while-loop
+# > But because only the 2nd while-loop would loop over again, the updated JSON data would not load
+# > Only the old JSON data would remain accessed within the 2nd while-loop, causing the mis-match in availability when trying to return.
