@@ -164,7 +164,7 @@ class User:
         # for key in User.user_books_history:
         #     if key == ""
         for item in User.user_books_history["borrowed"][self.user_name]:
-            if self.book_title in User.user_books_history["borrowed"][self.user_name][item] and self.book_author in User.user_books_history["borrowed"][self.user_name][item]:
+            if self.book_title in item and self.book_author in item:            #⬅️ Currently here. Test 2 c if dicts exist within this list, using print statement.
                 User.user_books_history["borrowed"][self.user_name].pop(item)
 
     def view_returned_history(self, user_name):
