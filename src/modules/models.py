@@ -165,7 +165,7 @@ class User:
             print(item)
             if self.book_title in item.values() and self.book_author in item.values():            #⬅️ Currently here. Test 2 c if dicts exist within this list, using print statement.
                 print(item)
-                User.user_books_history["borrowed"][self.user_name].pop(item)
+                User.user_books_history["borrowed"][self.user_name].remove(item)
             else:
                 print("\nNOT WORKING!")
 
