@@ -81,9 +81,7 @@ class Library:
 
         for index in range(len_library_data):
             for item in self.json_library_data:
-                print(item)
                 len_library_data -= 1
-                print(len_library_data)
                 if item["title"] == self.book_title and item["author"] == self.book_author:
                     if item["available"] == False:      #⬅️ This is not being checked because availability is not being 'False'
                         print(f"You just returned {self.book_title}, by {self.book_author}.")
@@ -159,13 +157,17 @@ class User:
                 for key, value in item.items():
                     returned_book_dict[key] = value
                 User.user_books_history["returned"][self.user_name].append(returned_book_dict)
-        print(User.user_books_history)
+        # print(User.user_books_history)
 
         # for key in User.user_books_history:
         #     if key == ""
         for item in User.user_books_history["borrowed"][self.user_name]:
-            if self.book_title in item and self.book_author in item:            #⬅️ Currently here. Test 2 c if dicts exist within this list, using print statement.
+            print(item)
+            if self.book_title in item.values() and self.book_author in item.values():            #⬅️ Currently here. Test 2 c if dicts exist within this list, using print statement.
+                print(item)
                 User.user_books_history["borrowed"][self.user_name].pop(item)
+            else:
+                print("\nNOT WORKING!")
 
     def view_returned_history(self, user_name):
         self.user_name = user_name
