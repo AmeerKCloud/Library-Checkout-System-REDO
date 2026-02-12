@@ -157,14 +157,10 @@ class User:
                 for key, value in item.items():
                     returned_book_dict[key] = value
                 User.user_books_history["returned"][self.user_name].append(returned_book_dict)
-        # print(User.user_books_history)
 
-        # for key in User.user_books_history:
-        #     if key == ""
         for item in User.user_books_history["borrowed"][self.user_name]:
             print(item)
-            if self.book_title in item.values() and self.book_author in item.values():            #⬅️ Currently here. Test 2 c if dicts exist within this list, using print statement.
-                print(item)
+            if self.book_title in item.values() and self.book_author in item.values():            #⬅️ Currently here. Resolved Borrowed book removed once returned.
                 User.user_books_history["borrowed"][self.user_name].remove(item)
             else:
                 print("\nNOT WORKING!")
@@ -182,4 +178,4 @@ class User:
                 print("_________________________")
 
 # NOTE: Progress Report:
-# Currently @ 'Library' class, @ 'borrow_book' function trying to figure out how to borrow book & do countdown.
+# 
