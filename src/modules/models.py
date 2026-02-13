@@ -124,6 +124,7 @@ class User:
             if item["title"] == self.book_title and item["author"] == self.book_author:
                 for key, value in item.items():
                     borrowed_book_dict[key] = value
+                borrowed_book_dict["date borrowed"] = self.todays_date 
                 User.user_books_history["borrowed"][self.user_name].append(borrowed_book_dict)
         print(User.user_books_history)
 
