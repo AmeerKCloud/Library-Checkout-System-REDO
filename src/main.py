@@ -117,4 +117,13 @@ while True:
 # > Only the old JSON data would remain accessed within the 2nd while-loop, causing the mis-match in availability when trying to return.
 
 # 2) Date input: Currently here
-# - Trying to find a way to include borrowed & returned dates to user book history
+# - Trying to find a way to include borrowed & returned dates to user book history (RESOLVED ✅)
+# - Need to now include 'date' module and input formatting to 'utils.py'
+
+# 3) When 'borrowed' books history becomes empty, it should show: 'Sorry, {self.user_name} has no currently borrowed books to show. ☹️'
+# - Currently, it only prints this in the beginning before the user even borrows any book
+# - But when he does borrow a book and then returns it & 'borrowed books history' becomes empty, it no longer prints this, but prints an empty format
+
+# 4) Add finishing touches to the program:
+# - Clean up the code and condense it where possible.
+# - 
