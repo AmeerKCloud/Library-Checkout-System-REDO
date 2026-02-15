@@ -76,10 +76,10 @@ while True:
         elif menu_1_choice == 'c':
 
             while True:
-                menu_2_options = input("\nChoose one of the following:\n'b' to view currently borrowed titles\n'r' to view all returned titles:\n").lower()
-                if menu_2_options == 'b':
+                menu_2_choice = user_inputs.menu_2()
+                if menu_2_choice == 'b':
                     user.view_borrowed_history(user_name=name)
-                elif menu_2_options == 'r':
+                elif menu_2_choice == 'r':
                     user.view_returned_history(user_name=name)
                 else:
                     break
