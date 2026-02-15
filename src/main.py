@@ -67,8 +67,6 @@ while True:
             if new_status != None and book_id != None:
                 update_library_books_availability(update_status=new_status, id_book=book_id)
                 user.returned_book(name, title, author, date, load_library_books())
-            else:
-                print("\nCome back as None")
 
         elif menu_1_choice == 'v':
             library.show_books()
