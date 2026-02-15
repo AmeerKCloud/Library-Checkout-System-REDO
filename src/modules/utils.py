@@ -147,6 +147,9 @@ class UserInputs:
                 # step 1: verify format
                 parsed_date = datetime.strptime(self.user_date_input, date_format)
 
+                # Step 2: force correct format
+                formatted_date = parsed_date.strftime(date_format)
+
 
     def menu_1(self, name):
         self.name = name
