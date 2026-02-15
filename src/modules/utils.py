@@ -139,6 +139,8 @@ class UserInputs:
     def date(self):                                         #⬅️ Currently working on date
         date = input("Enter todays date (MM/DD/YYYY):\n")
 
+        date_format = "%m/%d/%y"
+
 
     def menu_1(self, name):
         self.name = name
