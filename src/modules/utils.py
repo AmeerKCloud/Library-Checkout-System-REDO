@@ -120,10 +120,18 @@ class UserInputs:
 
     def book_title(self):
         while True:
-            title = input("\nEnter book title:\n").upper()
+            title = input("Enter book title:\n").upper()
 
             if title != "":
                 return title
+            print("Field cannot be empty ❌")
+
+    def book_author(self):
+        while True:
+            author = input("Enter authors name:\n").upper()
+
+            if author != "":
+                return author
             print("Field cannot be empty ❌")
 
 
