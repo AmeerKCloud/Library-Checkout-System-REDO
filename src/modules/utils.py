@@ -118,6 +118,14 @@ class UserInputs:
                 return name
             print("Field cannot be empty ❌")
 
+    def book_title(self):
+        while True:
+            title = input("\nEnter book title:\n").upper()
+
+            if title != "":
+                return title
+            print("Field cannot be empty ❌")
+
 
     def menu_1(self, name):
         self.name = name
