@@ -136,10 +136,13 @@ class UserInputs:
                 return author
             print("Field cannot be empty ❌")
 
-    def date(self):                                         #⬅️ Currently working on date
-        date = input("Enter todays date (MM/DD/YYYY):\n")
+    def validate_format(self, )
 
+    def date(self):                                         #⬅️ Currently working on date
         date_format = "%m/%d/%y"
+
+        while True:
+            date = input("Enter todays date (MM/DD/YYYY):\n")
 
 
     def menu_1(self, name):
