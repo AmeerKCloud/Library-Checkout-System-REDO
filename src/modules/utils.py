@@ -136,7 +136,7 @@ class UserInputs:
                 return author
             print("Field cannot be empty ❌")
 
-    def transac_date(self):
+    def transac_date(self):                                         #⬅️ Currently working on date
         date = input("Enter todays date:\n")
 
 
