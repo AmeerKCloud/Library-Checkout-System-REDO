@@ -1,6 +1,8 @@
 # All helper classes go here
 
 
+from datetime import datetime
+
 #---------------------------------------------⬇️JSON-Related (+ explanations)------------------------------------------------
 
 # ______PROJECT STRUCTURE______:
@@ -133,6 +135,9 @@ class UserInputs:
             if author != "":
                 return author
             print("Field cannot be empty ❌")
+
+    def transac_date(self):
+        date = input("Enter todays date:\n")
 
 
     def menu_1(self, name):
