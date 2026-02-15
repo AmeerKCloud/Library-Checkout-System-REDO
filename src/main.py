@@ -29,7 +29,7 @@ from modules.models import Book, Library, User
 user_inputs = UserInputs()
 
 while True:
-    name = input("\nEnter your name to begin:\n").title()
+    name = user_inputs.user_name()
     if name == "E":
         break
 
@@ -38,7 +38,7 @@ while True:
     while True:
         library = Library(load_library_books())   #⬅️ Moved inside 2nd while-loop otherwise updated json data is NOT renewed inside program
 
-        menu_1_choice = user_inputs.menu_1()
+        menu_1_choice = user_inputs.menu_1(name)
 
         if menu_1_choice == 'a':
             title = input("Enter book title:\n").upper()
