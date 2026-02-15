@@ -150,6 +150,11 @@ class UserInputs:
                 # Step 2: force correct format
                 formatted_date = parsed_date.strftime(date_format)
 
+                # Step 3: return formatted date string
+                return formatted_date
+            except ValueError:
+                print("Invalid format. Please use MM/DD/YYYY.")
+
 
     def menu_1(self, name):
         self.name = name
