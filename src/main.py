@@ -23,10 +23,10 @@
 
 
 
-from modules.utils import load_library_books, update_library_books_availability
+from modules.utils import UserInputs, load_library_books, update_library_books_availability
 from modules.models import Book, Library, User
 
-# print(load_library_books())
+user_inputs = UserInputs()
 
 while True:
     name = input("\nEnter your name to begin:\n").title()
@@ -38,15 +38,15 @@ while True:
     while True:
         library = Library(load_library_books())   #⬅️ Moved inside 2nd while-loop otherwise updated json data is NOT renewed inside program
 
-        menu_1_options = input("\nEnter one of the following:\n'a' for availability\n'b' for borrow\n'r' for return\n'v' for viewing all titles\n'c' for currently returned or borrowed books\n'e' to exit:\n").lower()
+        menu_1_choice = user_inputs.menu_1()
 
-        if menu_1_options == 'a':
+        if menu_1_choice == 'a':
             title = input("Enter book title:\n").upper()
             author = input("Enter authors name:\n").upper()
             book = Book(title, author, load_library_books())
             book.is_available()
 
-        elif menu_1_options == 'b':
+        elif menu_1_choice == 'b':
             title = input("\nEnter book title:\n").upper()
             author = input("Enter author name:\n").upper()
             date = input("Enter todays date:\n")
@@ -58,7 +58,7 @@ while True:
             else:
                 print("\nCome back as None")
 
-        elif menu_1_options == 'r':
+        elif menu_1_choice == 'r':
             title = input("\nEnter book title:\n").upper()
             author = input("Enter author name:\n").upper()
             date = input("Enter todays date:\n")
@@ -70,10 +70,10 @@ while True:
             else:
                 print("\nCome back as None")
 
-        elif menu_1_options == 'v':
+        elif menu_1_choice == 'v':
             library.show_books()
 
-        elif menu_1_options == 'c':
+        elif menu_1_choice == 'c':
 
             while True:
                 menu_2_options = input("\nChoose one of the following:\n'b' to view currently borrowed titles\n'r' to view all returned titles:\n").lower()
