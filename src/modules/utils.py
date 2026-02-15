@@ -110,6 +110,15 @@ def test_library_books_loaded():
 
 class UserInputs:
 
+    def user_name(self):
+        while True:
+            name = input("\nEnter your name to begin:\n").title()
+
+            if name != "":
+                return name
+            print("Field cannot be empty ❌")
+
+
     def menu_1(self):
         while True:
             choice = input("\nEnter one of the following:\n'a' for availability\n'b' for borrow\n'r' for return\n'v' for viewing all titles\n'h' for currently returned or borrowed books\n'e' to exit:\n").lower()
