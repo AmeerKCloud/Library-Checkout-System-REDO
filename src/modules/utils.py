@@ -143,6 +143,9 @@ class UserInputs:
         while True:
             self.user_date_input = input("Enter todays date (MM/DD/YYYY):\n")
 
+            if self.user_date_input == "e":
+                break
+
             try:
                 # step 1: verify format
                 parsed_date = datetime.strptime(self.user_date_input, date_format)
