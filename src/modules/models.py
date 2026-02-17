@@ -30,7 +30,6 @@ class Library:
     """
     def __init__(self, json_library_data):
         self.json_library_data = json_library_data
-        pass
 
     def show_books(self):
         """
