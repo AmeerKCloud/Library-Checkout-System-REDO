@@ -47,9 +47,9 @@ while True:
             book.is_available()
 
         elif menu_1_choice == 'b':
-            title = input("\nEnter book title:\n").upper()
-            author = input("Enter author name:\n").upper()
-            date = input("Enter todays date:\n")
+            title = user_inputs.book_title()
+            author = user_inputs.book_author()
+            date = user_inputs.date()
             new_status, book_id = library.borrow_book(book_title=title, book_author=author)
 
             if new_status != None and book_id != None:
@@ -59,9 +59,9 @@ while True:
                 print("\nCome back as None")
 
         elif menu_1_choice == 'r':
-            title = input("\nEnter book title:\n").upper()
-            author = input("Enter author name:\n").upper()
-            date = input("Enter todays date:\n")
+            title = user_inputs.book_title()
+            author = user_inputs.book_author()
+            date = user_inputs.date()
             new_status, book_id = library.return_book(book_title=title, book_author=author)
             
             if new_status != None and book_id != None:
