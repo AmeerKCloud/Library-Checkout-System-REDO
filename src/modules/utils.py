@@ -146,22 +146,23 @@ class UserInputs:
             if self.user_date_input == "e":
                 break
 
-            try:
-                # step 1: verify format
-                parsed_date = datetime.strptime(self.user_date_input, date_format)
-                print(f"\nParsed date: {parsed_date}")
+            if self.user_date_input != "":
+                try:
+                    # step 1: verify format
+                    parsed_date = datetime.strptime(self.user_date_input, date_format)
+                    print(f"\nParsed date: {parsed_date}")
 
-                # Step 2: force correct format
-                if parsed_date:
-                    formatted_date = parsed_date.strftime(date_format)
+                    # Step 2: force correct format
+                    if parsed_date:
+                        formatted_date = parsed_date.strftime(date_format)
 
-                    # Step 3: return formatted date string
-                    print(f"Formatted date: {formatted_date}")
-                    return formatted_date
-                else:
-                    print("❌ Invalid date format. Try again.")
-            except ValueError:
-                print("Invalid format. Please use MM/DD/YYYY.")
+                        # Step 3: return formatted date string
+                        print(f"Formatted date: {formatted_date}")
+                        return formatted_date
+                    else:
+                        print("❌ Invalid date format. Try again.")
+                except ValueError:
+                    print("Invalid format. Please use MM/DD/YYYY.")
 
 
     def menu_1(self, name):
