@@ -162,7 +162,7 @@ class UserInputs:
                     else:
                         print("❌ Invalid date format. Try again.")
                 except ValueError:
-                    print("Invalid format. Please use MM/DD/YYYY.")
+                    print("❌ Invalid format. Please use MM/DD/YYYY.")
 
 
     def menu_1(self, name):
