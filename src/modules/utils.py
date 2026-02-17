@@ -151,10 +151,13 @@ class UserInputs:
                 parsed_date = datetime.strptime(self.user_date_input, date_format)
 
                 # Step 2: force correct format
-                formatted_date = parsed_date.strftime(date_format)
+                if parsed_date:
+                    formatted_date = parsed_date.strftime(date_format)
 
-                # Step 3: return formatted date string
-                return formatted_date
+                    # Step 3: return formatted date string
+                    return formatted_date
+                else:
+                    print("❌ Invalid date format. Try again.")
             except ValueError:
                 print("Invalid format. Please use MM/DD/YYYY.")
 
