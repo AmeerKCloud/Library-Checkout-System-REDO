@@ -170,7 +170,7 @@ class UserInputs:
         while True:
             choice = input("\nChoose one of the following:\n'b' to view currently borrowed titles\n'r' to view all returned titles:\n").lower()
 
-            if choice in ["b", "r"]:
+            if choice in ["b", "r", "e"]:
                 return choice
             print("\nIncorrect entry ❌")
             print("Please only enter one of the letter choices provided above!")
