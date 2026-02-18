@@ -177,7 +177,17 @@ class UserInputs:
             print("\nIncorrect entry ❌")
             print("Please only enter one of the letter choices provided above!")
 
-    def menu_2(self):
+    def menu_2(self, name):
+        self.name = name
+        while True:
+            choice = input(f"\n{self.name}, enter one of the following:\n'a' for availability\n'b' for borrow\n'r' for return\n'v' for viewing all titles\n'h' for currently returned or borrowed books\n'e' to exit:\n").lower()
+
+            if choice in ["a", "b", "r", "v", "h", "e"]:
+                return choice
+            print("\nIncorrect entry ❌")
+            print("Please only enter one of the letter choices provided above!")
+
+    def menu_3(self):
         while True:
             choice = input("\nChoose one of the following:\n'b' to view currently borrowed titles\n'r' to view all returned titles:\n").lower()
 
