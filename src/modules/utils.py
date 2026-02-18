@@ -149,7 +149,6 @@ class UserInputs:
             if self.user_date_input != "":
                 try:
                     # step 1: verify format
-                    print("\n'try' is working")
                     parsed_date = datetime.strptime(self.user_date_input, date_format)
                     print(f"\nParsed date: {parsed_date}")
 
