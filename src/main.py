@@ -42,38 +42,42 @@ while True:
 
         if menu_1_choice == "c":
 
-            menu_2_choice = user_inputs.menu_1(name)
+            while True:
+                menu_2_choice = user_inputs.menu_1(name)
 
-            if menu_2_choice == 'a':
-                title = user_inputs.book_title()
-                author = user_inputs.book_author()
-                book = Book(title, author, load_library_books())
-                book.is_available()
+                if menu_2_choice == 'a':
+                    title = user_inputs.book_title()
+                    author = user_inputs.book_author()
+                    book = Book(title, author, load_library_books())
+                    book.is_available()
 
-            elif menu_2_choice == 'b':
-                title = user_inputs.book_title()
-                author = user_inputs.book_author()
-                date = user_inputs.date()
-                new_status, book_id = library.borrow_book(book_title=title, book_author=author)
+                elif menu_2_choice == 'b':
+                    title = user_inputs.book_title()
+                    author = user_inputs.book_author()
+                    date = user_inputs.date()
+                    new_status, book_id = library.borrow_book(book_title=title, book_author=author)
 
-                if new_status != None and book_id != None:
-                    update_library_books_availability(update_status=new_status, id_book=book_id)
-                    user.borrowed_book(name, title, author, date, load_library_books())
+                    if new_status != None and book_id != None:
+                        update_library_books_availability(update_status=new_status, id_book=book_id)
+                        user.borrowed_book(name, title, author, date, load_library_books())
+                    else:
+                        print("\nCome back as None")
+
+                elif menu_2_choice == 'r':
+                    title = user_inputs.book_title()
+                    author = user_inputs.book_author()
+                    date = user_inputs.date()
+                    new_status, book_id = library.return_book(book_title=title, book_author=author)
+                    
+                    if new_status != None and book_id != None:
+                        update_library_books_availability(update_status=new_status, id_book=book_id)
+                        user.returned_book(name, title, author, date, load_library_books())
+
+                elif menu_2_choice == 'v':
+                    library.show_books()
+
                 else:
-                    print("\nCome back as None")
-
-            elif menu_2_choice == 'r':
-                title = user_inputs.book_title()
-                author = user_inputs.book_author()
-                date = user_inputs.date()
-                new_status, book_id = library.return_book(book_title=title, book_author=author)
-                
-                if new_status != None and book_id != None:
-                    update_library_books_availability(update_status=new_status, id_book=book_id)
-                    user.returned_book(name, title, author, date, load_library_books())
-
-            elif menu_2_choice == 'v':
-                library.show_books()
+                    break
 
         elif menu_1_choice == "v":
 
