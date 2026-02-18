@@ -77,15 +77,11 @@ while True:
 
         elif menu_1_choice == "v":
 
-            menu_3_choice = user_inputs.menu_3()
-
-            if menu_3_choice == 'h':
-
                 while True:
-                    menu_2_choice = user_inputs.menu_2()
-                    if menu_2_choice == 'b':
+                    menu_3_choice = user_inputs.menu_3()
+                    if menu_3_choice == 'b':
                         user.view_borrowed_history(user_name=name)
-                    elif menu_2_choice == 'r':
+                    elif menu_3_choice == 'r':
                         user.view_returned_history(user_name=name)
                     else:
                         break

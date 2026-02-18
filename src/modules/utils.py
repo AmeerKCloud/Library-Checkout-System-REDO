@@ -170,7 +170,7 @@ class UserInputs:
     def menu_1(self, name):
         self.name = name
         while True:
-            choice = input(f"\n{self.name}, enter one of the following:\n'c' to create a new transaction\n'v' to view past transactions\n:\n").lower()
+            choice = input(f"\n{self.name}, enter one of the following:\n'c' to create a new transaction\n'v' to view past transactions:\n").lower()
 
             if choice in ["c", "v"]:
                 return choice
