@@ -163,7 +163,7 @@ class UserInputs:
                     else:
                         print("❌ Invalid date format. Try again.")
                 except ValueError:
-                    print("❌ Invalid format. Please use MM/DD/YYYY.")
+                    print("❌ Giving value error")
             else:
                 print("Field cannot be left blank.")
 
