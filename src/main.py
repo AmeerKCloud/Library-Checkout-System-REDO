@@ -71,7 +71,9 @@ while True:
         elif menu_1_choice == 'v':
             library.show_books()
 
-        elif menu_1_choice == 'h':
+        menu_3_choice = user_inputs.menu_3()
+
+        if menu_3_choice == 'h':
 
             while True:
                 menu_2_choice = user_inputs.menu_2()

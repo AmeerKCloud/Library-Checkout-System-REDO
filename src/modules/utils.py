@@ -182,7 +182,7 @@ class UserInputs:
         while True:
             choice = input(f"\n{self.name}, enter one of the following:\n'a' for availability\n'b' for borrow\n'r' for return\n'v' for viewing all titles\n'e' to return to previous menu:\n").lower()
 
-            if choice in ["a", "b", "r", "v"]:
+            if choice in ["a", "b", "r", "v", "e"]:
                 return choice
             print("\nIncorrect entry ❌")
             print("Please only enter one of the letter choices provided above!")
