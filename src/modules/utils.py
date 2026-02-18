@@ -180,7 +180,7 @@ class UserInputs:
     def menu_2(self, name):
         self.name = name
         while True:
-            choice = input(f"\n{self.name}, enter one of the following:\n'a' for availability\n'b' for borrow\n'r' for return\n'v' for viewing all titles\n:\n").lower()
+            choice = input(f"\n{self.name}, enter one of the following:\n'a' for availability\n'b' for borrow\n'r' for return\n'v' for viewing all titles\n'e' to return to previous menu:\n").lower()
 
             if choice in ["a", "b", "r", "v"]:
                 return choice
