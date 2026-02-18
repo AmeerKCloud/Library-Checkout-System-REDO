@@ -138,7 +138,7 @@ class UserInputs:
 
 
     def date(self):                                         #⬅️ Currently working on date
-        date_format = "%m/%d/%y"
+        date_format = "%m/%d/%Y"                            #⬅️ Capital 'Y' = four-digit year, 'y' = two-digit year
 
         while True:
             self.user_date_input = input("Enter todays date (MM/DD/YYYY):\n")
