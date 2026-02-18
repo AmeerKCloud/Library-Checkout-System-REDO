@@ -41,8 +41,8 @@ while True:
         menu_1_choice = user_inputs.menu_1(name)
 
         if menu_1_choice == 'a':
-            title = input("Enter book title:\n").upper()
-            author = input("Enter authors name:\n").upper()
+            title = user_inputs.book_title()
+            author = user_inputs.book_author()
             book = Book(title, author, load_library_books())
             book.is_available()
 
