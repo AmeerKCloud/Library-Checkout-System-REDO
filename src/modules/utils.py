@@ -172,7 +172,7 @@ class UserInputs:
         while True:
             choice = input(f"\n{self.name}, enter one of the following:\n'c' to create a new transaction\n'v' to view past transactions\n:\n").lower()
 
-            if choice in ["a", "b", "r", "v", "h", "e"]:
+            if choice in ["c", "v"]:
                 return choice
             print("\nIncorrect entry ❌")
             print("Please only enter one of the letter choices provided above!")
@@ -180,16 +180,16 @@ class UserInputs:
     def menu_2(self, name):
         self.name = name
         while True:
-            choice = input(f"\n{self.name}, enter one of the following:\n'a' for availability\n'b' for borrow\n'r' for return\n'v' for viewing all titles\n'h' for currently returned or borrowed books\n'e' to exit:\n").lower()
+            choice = input(f"\n{self.name}, enter one of the following:\n'a' for availability\n'b' for borrow\n'r' for return\n'v' for viewing all titles\n:\n").lower()
 
-            if choice in ["a", "b", "r", "v", "h", "e"]:
+            if choice in ["a", "b", "r", "v"]:
                 return choice
             print("\nIncorrect entry ❌")
             print("Please only enter one of the letter choices provided above!")
 
     def menu_3(self):
         while True:
-            choice = input("\nChoose one of the following:\n'b' to view currently borrowed titles\n'r' to view all returned titles:\n").lower()
+            choice = input("\nChoose one of the following:\n'b' to view currently borrowed titles\n'r' to view all returned titles\n'e' to return to previous menu:\n").lower()
 
             if choice in ["b", "r", "e"]:
                 return choice
