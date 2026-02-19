@@ -173,7 +173,6 @@ class UserInputs:
             choice = input(f"\n{self.name}, enter one of the following:\n'c' to create a new transaction\n'v' to view past transactions:\n").lower()
 
             if choice in ["c", "v", "e"]:
-                print(f"\nChoice ➡️ {choice}")
                 return choice
             print("\nIncorrect entry ❌")
             print("Please only enter one of the letter choices provided above!")
