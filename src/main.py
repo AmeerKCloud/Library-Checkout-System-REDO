@@ -36,13 +36,14 @@ while True:
     user = User()             #⬅️ Create the class object
 
     while True:
-        library = Library(load_library_books())   #⬅️ Moved inside 2nd while-loop otherwise updated json data is NOT renewed inside program
 
         menu_1_choice = user_inputs.menu_1(name)
 
         if menu_1_choice == "c":
 
             while True:
+                library = Library(load_library_books())   #⬅️ Moved inside 3rd while-loop otherwise updated json data is NOT renewed inside program
+
                 menu_2_choice = user_inputs.menu_2(name)
 
                 if menu_2_choice == 'a':
