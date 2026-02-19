@@ -43,7 +43,7 @@ while True:
         if menu_1_choice == "c":
 
             while True:
-                menu_2_choice = user_inputs.menu_1(name)
+                menu_2_choice = user_inputs.menu_2(name)
 
                 if menu_2_choice == 'a':
                     title = user_inputs.book_title()
