@@ -82,7 +82,7 @@ class Library:
             for item in self.json_library_data:
                 len_library_data -= 1
                 if item["title"] == self.book_title and item["author"] == self.book_author:
-                    if item["available"] == False:      #⬅️ This is not being checked because availability is not being 'False'
+                    if item["available"] == False:      
                         print(f"You just returned {self.book_title}, by {self.book_author}.")
                         new_status = True
                         return new_status, item["book_id"]
@@ -160,7 +160,7 @@ class User:
                 User.user_books_history["returned"][self.user_name].append(returned_book_dict)
 
         for item in User.user_books_history["borrowed"][self.user_name]:
-            print(item)
+            print(f"This is printing ➡️{item}")
             if self.book_title in item.values() and self.book_author in item.values():            #⬅️ Currently here. Resolved Borrowed book removed once returned.
                 User.user_books_history["borrowed"][self.user_name].remove(item)
             else:
