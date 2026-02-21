@@ -21,6 +21,9 @@ class Book:
                     print(f"\n{self.book_title}, by {self.book_author}, is currently available ✅")
                 else:
                     print(f"\n{self.book_title}, by {self.book_author}, is currently unavailable ❌")
+            else:
+                print("\nSorry, your entry does not match any title in our records.")
+                print("Perhaps check your spelling or review our available list?")
 
 class Library:
     """
@@ -159,11 +162,11 @@ class User:
                 User.user_books_history["returned"][self.user_name].append(returned_book_dict)
 
         for item in User.user_books_history["borrowed"][self.user_name]:            #⬅️ Remove returned book from borrowed book history
-            # print(f"This is printing ➡️{item}")
+            # print(f"This is printing ➡️{item}")                                   #⬅️ For testing purposes
             if self.book_title in item.values() and self.book_author in item.values():
                 User.user_books_history["borrowed"][self.user_name].remove(item)
             # else:
-            #     print("\nNOT WORKING!")
+            #     print("\nNOT WORKING!")                                              #⬅️ For testing purposes
 
     def view_returned_history(self, user_name):
         self.user_name = user_name
