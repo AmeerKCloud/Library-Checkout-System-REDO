@@ -139,7 +139,7 @@ class User:
                 print("_________________________")
 
     def returned_book(self, user_name, book_title, book_author, todays_date, json_library_data):
-        """Makes a list of all of a users borrowed books."""
+        """Makes a list of all of a users returned books."""
         self.user_name = user_name
         self.book_title = book_title
         self.book_author = book_author
@@ -158,9 +158,9 @@ class User:
                 returned_book_dict["date returned"] = self.todays_date 
                 User.user_books_history["returned"][self.user_name].append(returned_book_dict)
 
-        for item in User.user_books_history["borrowed"][self.user_name]:
+        for item in User.user_books_history["borrowed"][self.user_name]:            #⬅️ Remove returned book from borrowed book history
             # print(f"This is printing ➡️{item}")
-            if self.book_title in item.values() and self.book_author in item.values():            #⬅️ Currently here. Resolved. Borrowed book removed once returned.
+            if self.book_title in item.values() and self.book_author in item.values():
                 User.user_books_history["borrowed"][self.user_name].remove(item)
             # else:
             #     print("\nNOT WORKING!")
