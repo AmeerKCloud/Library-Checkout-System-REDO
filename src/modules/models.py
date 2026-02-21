@@ -54,10 +54,10 @@ class Library:
         for index in range(len_library_data):
             for item in self.json_library_data:
                 len_library_data -= 1
-                print(len_library_data)
+                # print(len_library_data)                                                            #⬅️ For testing purposes
                 if item["title"] == self.book_title and item["author"] == self.book_author:
                     if item["available"] == True:
-                        print(f"You just borrowed {self.book_title}, by {self.book_author}.")
+                        print(f"\nYou just borrowed {self.book_title}, by {self.book_author}.")
                         new_status = False
                         return new_status, item["book_id"]
 
@@ -83,7 +83,7 @@ class Library:
                 len_library_data -= 1
                 if item["title"] == self.book_title and item["author"] == self.book_author:
                     if item["available"] == False:      
-                        print(f"You just returned {self.book_title}, by {self.book_author}.")
+                        print(f"\nYou just returned {self.book_title}, by {self.book_author}.")
                         new_status = True
                         return new_status, item["book_id"]
 

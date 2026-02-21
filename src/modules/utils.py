@@ -150,14 +150,14 @@ class UserInputs:
                 try:
                     # step 1: verify format
                     parsed_date = datetime.strptime(self.user_date_input, date_format)
-                    print(f"\nParsed date: {parsed_date}")
+                    # print(f"\nParsed date: {parsed_date}")                                 #⬅️ For testing purposes
 
                     # Step 2: force correct format
                     if parsed_date:
                         formatted_date = parsed_date.strftime(date_format)
 
                         # Step 3: return formatted date string
-                        print(f"Formatted date: {formatted_date}")
+                        # print(f"Formatted date: {formatted_date}")        #⬅️ For testing purposes
                         return formatted_date
                     else:
                         print("❌ Invalid date format. Try again.")
