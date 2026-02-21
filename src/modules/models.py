@@ -130,7 +130,7 @@ class User:
     def view_borrowed_history(self, user_name):
         self.user_name = user_name
 
-        if self.user_name not in User.user_books_history["borrowed"] and User.user_books_history["borrowed"][self.user_name] == False:
+        if self.user_name not in User.user_books_history["borrowed"] or not User.user_books_history["borrowed"][self.user_name]:
             print(f"\nSorry, {self.user_name} has no currently borrowed books to show. ☹️")
         else:
             print(f"---------- All currently borrowed books for {self.user_name} ----------:")
