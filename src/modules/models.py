@@ -15,6 +15,8 @@ class Book:
         self.json_library_data = json_library_data
 
     def is_available(self):
+        """Prints entire JSON list of library books on file."""
+
         for list_item in self.json_library_data:
             if list_item["title"] == self.book_title and list_item["author"] == self.book_author:
                 if list_item["available"] == True:
@@ -22,7 +24,7 @@ class Book:
                 else:
                     print(f"\n{self.book_title}, by {self.book_author}, is currently unavailable ❌")
             else:
-                print("\nSorry, your entry does not match any title in our records.")
+                print("\nSorry, your entry does not match any title in our records. ❌")
                 print("Perhaps check your spelling or review our available list?")
 
 class Library:
