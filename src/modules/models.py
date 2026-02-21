@@ -125,7 +125,6 @@ class User:
                     borrowed_book_dict[key] = value
                 borrowed_book_dict["date borrowed"] = self.todays_date 
                 User.user_books_history["borrowed"][self.user_name].append(borrowed_book_dict)
-        # print(User.user_books_history)
 
     def view_borrowed_history(self, user_name):
         self.user_name = user_name
@@ -169,7 +168,7 @@ class User:
     def view_returned_history(self, user_name):
         self.user_name = user_name
 
-        if self.user_name not in User.user_books_history["returned"]:
+        if self.user_name not in User.user_books_history["returned"] or not User.user_books_history["returned"][self.user_name]:
             print(f"\nSorry, {self.user_name} has no currently returned books to show. ☹️")
         else:
             print(f"---------- All currently returned books for {self.user_name} ----------:")
