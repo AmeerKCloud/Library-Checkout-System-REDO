@@ -21,7 +21,7 @@ class Book:
 
         for list_item in self.json_library_data:
             len_book_list -= 1
-            print(len_book_list)
+            # print(len_book_list)                                        #⬅️ For testing purposes
 
             if list_item["title"] == self.book_title and list_item["author"] == self.book_author:
                 if list_item["available"] == True:

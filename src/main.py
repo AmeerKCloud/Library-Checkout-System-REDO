@@ -61,8 +61,8 @@ while True:
                     if new_status != None and book_id != None:
                         update_library_books_availability(update_status=new_status, id_book=book_id)
                         user.borrowed_book(name, title, author, date, load_library_books())
-                    else:
-                        print("\nCome back as None")
+                    # else:
+                    #     print("\nCome back as None")                              #⬅️ For testing purposes
 
                 elif menu_2_choice == 'r':
                     title = user_inputs.book_title()
