@@ -130,10 +130,14 @@ while True:
 # - Currently, it only prints this in the beginning before the user even borrows any book
 # - But when he does borrow a book and then returns it & 'borrowed books history' becomes empty, it no longer prints this, but prints an empty format
 
-# 4) When a user returns a book, everything works, but this still prints: 'NOT WORKING!'
+# 4) When a user returns a book, everything works, but this still prints: 'NOT WORKING!' (RESOLVED ✅)
 # - Also, returned raw list prints 2x, too
 # - Find out whats causing this and fix it.
 
-# 4) Add finishing touches to the program:
+# 4) Add finishing touches to the program (RESOLVED ✅):
 # - Clean up the code and condense it where possible.
 # - 
+
+# BONUS: Add functionality that allows you to see all current users in Library members data base
+# + Add the ability to see how many books they currently borrowed
+# + How many books they've returned
